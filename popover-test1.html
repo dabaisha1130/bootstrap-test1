@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bootstrap 模板</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--引入Bootstrap-->
+    <link href="./bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <!--HTML5 Shim 和Response.js用于让IE8支持HTML5元素和媒体查询-->
+    <!--注意：如果通过file://引入Response.js文件，则该文件无法起效果-->
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <!--包括所有已编译的插件-->
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+
+</head>
+<body>
+
+
+<div clas="container" style="padding: 100px 50px 10px;" >
+    <button type="button" class="btn btn-primary popover-show"
+            title="Popover title" data-container="body"
+            data-toggle="popover" data-trigger="hover click"
+            data-content="左侧的 Popover 中的一些内容 —— show 方法">
+        左侧的 Popover
+    </button>
+
+</div>
+<script>
+   $(function () { $('.popover-show').popover();});
+    $(function () { $('.popover-show').on('shown.bs.popover', function () {
+        alert("当显示时警告消息");
+    })});
+</script>
+</div>
+
+<div class="container" style="padding: 100px 50px 10px;" >
+    <button type="button" class="btn btn-default popover-show"
+            title="Popover title" data-container="body"
+            data-toggle="popover" data-placement="left"
+            data-content="左侧的 Popover 中的一些内容 —— show 方法">
+        左侧的 Popover
+    </button>
+    <button type="button" class="btn btn-primary popover-hide"
+            title="Popover title" data-container="body"
+            data-toggle="popover" data-placement="top"
+            data-content="顶部的 Popover 中的一些内容 —— hide 方法">
+        顶部的 Popover
+    </button>
+    <button type="button" class="btn btn-success popover-destroy"
+            title="Popover title" data-container="body"
+            data-toggle="popover" data-placement="bottom"
+            data-content="底部的 Popover 中的一些内容 —— destroy 方法">
+        底部的 Popover
+    </button>
+    <button type="button" class="btn btn-warning popover-toggle"
+            title="Popover title" data-container="body"
+            data-toggle="popover" data-placement="right"
+            data-content="右侧的 Popover 中的一些内容 —— toggle 方法">
+        右侧的 Popover
+    </button><br><br><br><br><br><br>
+    <p class="popover-options">
+        <a href="#" type="button" class="btn btn-warning" title="<h2>Title</h2>"
+           data-container="body" data-toggle="popover" data-content="
+         <h4>Popover 中的一些内容 —— options 方法</h4>">
+            Popover
+        </a>
+    </p>
+    <script>
+        $(function () { $('.popover-show').popover();});
+        $(function () { $('.popover-hide').popover('hide');});
+        $(function () { $('.popover-destroy').popover('destroy');});
+        $(function () { $('.popover-toggle').popover('toggle');});
+        $(function () { $(".popover-options a").popover({html : true });});
+    </script>
+</div>
+
+<div class="alert alert-warning fade in">
+    <a href="#" class="close" data-dismiss="alert">
+        &times;
+    </a>
+    <strong>警告！</strong>您的网络连接有问题。
+</div>
+
+<h3>警告框（Alert）插件 alert('close') 方法</h3>
+<div id="myAlert" class="alert alert-success">
+    <a href="#" class="close" data-dismiss="alert">&times;</a>
+    <strong>成功！</strong>结果是成功的。
+</div>
+<div id="myAlert" class="alert alert-warning">
+    <a href="#" class="close" data-dismiss="alert">&times;</a>
+    <strong>警告！</strong>您的网络连接有问题。
+</div>
+
+<script type="text/javascript">
+    $(function(){
+        $(".close").click(function(){
+            $("#myAlert").alert('close');
+        });
+    });
+
+</script>
+
+
+
+<button id="fat-btn" class="btn btn-primary" data-loading-text="Loading..."
+        type="button"> 加载状态
+</button>
+<script>
+    $(function() {
+        $("#fat-btn").click(function(){
+            $(this).button('loading').delay(1000).queue(function() {
+                $(this).button('reset');
+            });
+        });
+    });
+</script>
+
+<button type="button" class="btn btn-primary" data-toggle="button"> 单个切换</button>
+
+<div class="btn-group" data-toggle="buttons">
+    <label class="btn btn-primary">
+        <input type="checkbox"> 选项 1
+    </label>
+    <label class="btn btn-primary">
+        <input type="checkbox"> 选项 2
+    </label>
+    <label class="btn btn-primary">
+        <input type="checkbox"> 选项 3
+    </label>
+</div>
+
+<div class="btn-group" data-toggle="buttons">
+    <label >
+        <input type="checkbox"> 选项 1
+    </label>
+    <label >
+        <input type="checkbox"> 选项 2
+    </label>
+    <label >
+        <input type="checkbox"> 选项 3
+    </label>
+</div>
+
+<div class="btn-group" data-toggle="buttons">
+    <label class="btn btn-primary">
+        <input type="radio" name="options" id="option1"> 选项 1
+    </label>
+    <label class="btn btn-primary">
+        <input type="radio" name="options" id="option2"> 选项 2
+    </label>
+    <label class="btn btn-primary">
+        <input type="radio" name="options" id="option3"> 选项 3
+    </label>
+</div>
+
+
+<div class="panel-group" id="accordion">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion"
+                   href="#collapseOne">
+                    点击我进行展开，再次点击我进行折叠。第 1 部分
+                </a>
+            </h4>
+        </div>
+        <div id="collapseOne" class="panel-collapse collapse in">
+            <div class="panel-body">
+                Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                vice lomo.
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion"
+                   href="#collapseTwo">
+                    点击我进行展开，再次点击我进行折叠。第 2 部分
+                </a>
+            </h4>
+        </div>
+        <div id="collapseTwo" class="panel-collapse collapse">
+            <div class="panel-body">
+                Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                vice lomo.
+            </div>
+        </div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordion"
+                   href="#collapseThree">
+                    点击我进行展开，再次点击我进行折叠。第 3 部分
+                </a>
+            </h4>
+        </div>
+        <div id="collapseThree" class="panel-collapse collapse">
+            <div class="panel-body">
+                Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+                vice lomo.
+            </div>
+        </div>
+    </div>
+</div>
+
+<button type="button" class="btn btn-primary" data-toggle="collapse"
+        data-target="#demo">
+    简单的可折叠组件
+</button>
+
+<div id="demo" class="collapse in">
+    Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+    cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
+    vice lomo.
+</div>
+
+</body>
+</html>
