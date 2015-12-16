@@ -35,6 +35,7 @@
                 <li class="active"><a href="#"><span class="glyphicon glyphicon-home">Home</span></a></li>
                 <li><a href="#shop"><span class="glyphicon glyphicon-shopping-cart">Shop</span></a></li>
                 <li><a href="#support"><span class="glyphicon glyphicon-headphones">Support</span></a></li>
+                <li><a href="#menu-toggle"><span class="glyphicon glyphicon-headphones" id="menu-toggle">Toggle Menu</span></a></li>
             </ul>
         </div><!-- /.nav-collapse -->
 
@@ -84,7 +85,7 @@
                     <h1>Simple Sidebar</h1>
                     <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
                     <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
-                    <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Toggle Menu</a>
+
                 </div>
             </div>
         </div>
@@ -93,32 +94,8 @@
 </div>
 <!-- /#wrapper -->
 
-<div class="navbar navbar-fixed-bottom navbar-inverse" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Project name</a>
-        </div>
-
-        <div class="collapse navbar-collapse pull-right">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#"><span class="glyphicon glyphicon-home">Home</span></a></li>
-                <li><a href="#shop"><span class="glyphicon glyphicon-shopping-cart">Shop</span></a></li>
-                <li><a href="#support"><span class="glyphicon glyphicon-headphones">Support</span></a></li>
-                <li><a href="#menu-toggle" class="btn btn-default" id="menu-toggle1">Toggle Menu</a></li>
-            </ul>
-        </div><!-- /.nav-collapse -->
-
-    </div><!-- /.container -->
-</div>
-
 <!--jQuery (Bootstrap 的JavaScript插件需要引入jQuery) -->
-<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/jquery/jquery.js"></script>
 <!--包括所有已编译的插件-->
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 
@@ -127,18 +104,6 @@
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
-    });
-    $("#menu-toggle1").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-</script>
-
-<script>
-    $(document).ready(function(){
-        $("p").click(function(){
-            $(this).hide();
-        });
     });
 </script>
 
