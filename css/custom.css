@@ -125,4 +125,105 @@
         position: relative;
         margin-right: 0;
     }
+
+    #modal-test{
+        background-color: #0000ff;
+        width:400px;
+        height:200px;
+        position:absolute;
+        top: 120px;
+        left:400px;
+        display:none;
+    }
+    #modal-test.toggled{
+        background-color: #0000ff;
+        width:400px;
+        height:200px;
+        position:absolute;
+        top: 120px;
+        left:400px;
+        display:block;
+        z-index:1050;
+    }
+
+    #modal-test.fade{
+
+    }
+    #modal-backdrop {
+        background-color: #000;
+        height:20px;
+        width:100%;
+        display:none;
+    }
+    #modal-backdrop.toggled {
+        position: fixed;
+        top: 150px;
+        right: 50px;
+        bottom: 50px;
+        left: 50px;
+        z-index: 1000;
+        width:100%;
+        height:100%;
+        background-color: #000;
+        display:block;
+    }
+
+    .tab-close-btn{
+        margin-top:5px;
+        margin-right:10px;
+    }
+    .tab-modal-header{
+        border-bottom:0;
+    }
+
+    .modal-header{
+        /*background-color:#f00;*/
+    }
+
+
+    .navbar-custom {
+        background-color:#1b6aaa;
+        color:#ffffff;
+        border-radius:0.4em;
+        height:50px;
+    }
+    .nav-tabs-custom{
+        background-color:#1b6aaa;
+    }
+
+    .navbar-custom .nav-tabs{
+        border-bottom:0;
+        height:100%;
+    }
+
+    .navbar-custom .navbar-nav > li {
+        color:#fff;
+        vartical-align:middle;
+    }
+
+    .navbar-custom .navbar-nav > li > a {
+        color:#fff;
+        vartical-align:middle;
+    }
+    .navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+        color: #ffffff;
+        background-color:transparent;
+    }
+    .navbar-custom .navbar-brand {
+        color:#eeeeee;
+    }
+
+    .navbar-custom .nav-tabs > li > a {
+        margin-right: 2px;
+        line-height: 1.42857143;
+        border: 1px solid transparent;
+        border-radius: 4px 4px 0 0;
+        background-color:#fff;
+        padding:10px 10px 0px 10px;
+    }
+
+
+    .navbar-custom .nav-tabs > li.active > a {
+        background-color:#f00;
+    }
 }
