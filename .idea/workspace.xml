@@ -2,111 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4abddc0d-7dd4-41cc-b64d-77e0b73ce833" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ace/assets/css/ace.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ace/assets/js/ace-extra.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/font-awesome.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/font/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/tooltip-test.css" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jquery/test/csp.php" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jquery/test/data/jquery-1.8.2.ajax_xhr.min.js" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/bower_components/jquery/test/polluted.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ace/assets/js/ace.min.js" afterPath="$PROJECT_DIR$/ace/assets/js/ace.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ace/index.html" afterPath="$PROJECT_DIR$/ace/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/.bower.json" afterPath="$PROJECT_DIR$/bower_components/jquery/.bower.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/.gitignore" afterPath="$PROJECT_DIR$/bower_components/jquery/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/.jshintrc" afterPath="$PROJECT_DIR$/bower_components/jquery/.jshintrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/AUTHORS.txt" afterPath="$PROJECT_DIR$/bower_components/jquery/AUTHORS.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/bower_components/jquery/CONTRIBUTING.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/Gruntfile.js" afterPath="$PROJECT_DIR$/bower_components/jquery/Gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/MIT-LICENSE.txt" afterPath="$PROJECT_DIR$/bower_components/jquery/MIT-LICENSE.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/README.md" afterPath="$PROJECT_DIR$/bower_components/jquery/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/build/release-notes.js" afterPath="$PROJECT_DIR$/bower_components/jquery/build/release-notes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/build/release.js" afterPath="$PROJECT_DIR$/bower_components/jquery/build/release.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/component.json" afterPath="$PROJECT_DIR$/bower_components/jquery/component.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/jquery-migrate.js" afterPath="$PROJECT_DIR$/bower_components/jquery/jquery-migrate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/jquery-migrate.min.js" afterPath="$PROJECT_DIR$/bower_components/jquery/jquery-migrate.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/jquery.js" afterPath="$PROJECT_DIR$/bower_components/jquery/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/jquery.min.js" afterPath="$PROJECT_DIR$/bower_components/jquery/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/jquery.min.map" afterPath="$PROJECT_DIR$/bower_components/jquery/jquery.min.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/package.json" afterPath="$PROJECT_DIR$/bower_components/jquery/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/speed/benchmark.js" afterPath="$PROJECT_DIR$/bower_components/jquery/speed/benchmark.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/speed/event.html" afterPath="$PROJECT_DIR$/bower_components/jquery/speed/event.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/speed/index.html" afterPath="$PROJECT_DIR$/bower_components/jquery/speed/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/speed/jquery-basis.js" afterPath="$PROJECT_DIR$/bower_components/jquery/speed/jquery-basis.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/speed/slice.vs.concat.html" afterPath="$PROJECT_DIR$/bower_components/jquery/speed/slice.vs.concat.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/src/.jshintrc" afterPath="$PROJECT_DIR$/bower_components/jquery/src/.jshintrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/src/ajax.js" afterPath="$PROJECT_DIR$/bower_components/jquery/src/ajax.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/src/ajax/script.js" afterPath="$PROJECT_DIR$/bower_components/jquery/src/ajax/script.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/src/ajax/xhr.js" afterPath="$PROJECT_DIR$/bower_components/jquery/src/ajax/xhr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/src/attributes.js" afterPath="$PROJECT_DIR$/bower_components/jquery/src/attributes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/src/callbacks.js" afterPath="$PROJECT_DIR$/bower_components/jquery/src/callbacks.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/src/core.js" afterPath="$PROJECT_DIR$/bower_components/jquery/src/core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/src/css.js" afterPath="$PROJECT_DIR$/bower_components/jquery/src/css.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/src/data.js" afterPath="$PROJECT_DIR$/bower_components/jquery/src/data.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/src/deprecated.js" afterPath="$PROJECT_DIR$/bower_components/jquery/src/deprecated.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/src/dimensions.js" afterPath="$PROJECT_DIR$/bower_components/jquery/src/dimensions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/src/effects.js" afterPath="$PROJECT_DIR$/bower_components/jquery/src/effects.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/src/event-alias.js" afterPath="$PROJECT_DIR$/bower_components/jquery/src/event-alias.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/src/event.js" afterPath="$PROJECT_DIR$/bower_components/jquery/src/event.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/src/exports.js" afterPath="$PROJECT_DIR$/bower_components/jquery/src/exports.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/src/intro.js" afterPath="$PROJECT_DIR$/bower_components/jquery/src/intro.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/src/manipulation.js" afterPath="$PROJECT_DIR$/bower_components/jquery/src/manipulation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/src/offset.js" afterPath="$PROJECT_DIR$/bower_components/jquery/src/offset.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/src/queue.js" afterPath="$PROJECT_DIR$/bower_components/jquery/src/queue.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/src/sizzle-jquery.js" afterPath="$PROJECT_DIR$/bower_components/jquery/src/sizzle-jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/src/support.js" afterPath="$PROJECT_DIR$/bower_components/jquery/src/support.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/src/traversing.js" afterPath="$PROJECT_DIR$/bower_components/jquery/src/traversing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/.jshintignore" afterPath="$PROJECT_DIR$/bower_components/jquery/test/.jshintignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/.jshintrc" afterPath="$PROJECT_DIR$/bower_components/jquery/test/.jshintrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/data/ajax/unreleasedXHR.html" afterPath="$PROJECT_DIR$/bower_components/jquery/test/data/ajax/unreleasedXHR.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/data/core/cc_on.html" afterPath="$PROJECT_DIR$/bower_components/jquery/test/data/core/cc_on.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/data/dimensions/documentLarge.html" afterPath="$PROJECT_DIR$/bower_components/jquery/test/data/dimensions/documentLarge.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/data/dimensions/documentSmall.html" afterPath="$PROJECT_DIR$/bower_components/jquery/test/data/dimensions/documentSmall.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/data/event/promiseReady.html" afterPath="$PROJECT_DIR$/bower_components/jquery/test/data/event/promiseReady.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/data/event/syncReady.html" afterPath="$PROJECT_DIR$/bower_components/jquery/test/data/event/syncReady.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/data/manipulation/iframe-denied.html" afterPath="$PROJECT_DIR$/bower_components/jquery/test/data/manipulation/iframe-denied.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/data/offset/absolute.html" afterPath="$PROJECT_DIR$/bower_components/jquery/test/data/offset/absolute.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/data/offset/body.html" afterPath="$PROJECT_DIR$/bower_components/jquery/test/data/offset/body.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/data/offset/fixed.html" afterPath="$PROJECT_DIR$/bower_components/jquery/test/data/offset/fixed.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/data/offset/relative.html" afterPath="$PROJECT_DIR$/bower_components/jquery/test/data/offset/relative.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/data/offset/scroll.html" afterPath="$PROJECT_DIR$/bower_components/jquery/test/data/offset/scroll.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/data/offset/static.html" afterPath="$PROJECT_DIR$/bower_components/jquery/test/data/offset/static.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/data/offset/table.html" afterPath="$PROJECT_DIR$/bower_components/jquery/test/data/offset/table.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/data/selector/html5_selector.html" afterPath="$PROJECT_DIR$/bower_components/jquery/test/data/selector/html5_selector.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/data/selector/sizzle_cache.html" afterPath="$PROJECT_DIR$/bower_components/jquery/test/data/selector/sizzle_cache.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/data/support/bodyBackground.html" afterPath="$PROJECT_DIR$/bower_components/jquery/test/data/support/bodyBackground.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/data/support/shrinkWrapBlocks.html" afterPath="$PROJECT_DIR$/bower_components/jquery/test/data/support/shrinkWrapBlocks.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/data/support/testElementCrash.html" afterPath="$PROJECT_DIR$/bower_components/jquery/test/data/support/testElementCrash.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/data/test.js" afterPath="$PROJECT_DIR$/bower_components/jquery/test/data/test.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/data/testinit.js" afterPath="$PROJECT_DIR$/bower_components/jquery/test/data/testinit.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/data/testrunner.js" afterPath="$PROJECT_DIR$/bower_components/jquery/test/data/testrunner.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/data/testsuite.css" afterPath="$PROJECT_DIR$/bower_components/jquery/test/data/testsuite.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/delegatetest.html" afterPath="$PROJECT_DIR$/bower_components/jquery/test/delegatetest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/hovertest.html" afterPath="$PROJECT_DIR$/bower_components/jquery/test/hovertest.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/index.html" afterPath="$PROJECT_DIR$/bower_components/jquery/test/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/localfile.html" afterPath="$PROJECT_DIR$/bower_components/jquery/test/localfile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/networkerror.html" afterPath="$PROJECT_DIR$/bower_components/jquery/test/networkerror.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/readywait.html" afterPath="$PROJECT_DIR$/bower_components/jquery/test/readywait.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/unit/ajax.js" afterPath="$PROJECT_DIR$/bower_components/jquery/test/unit/ajax.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/unit/attributes.js" afterPath="$PROJECT_DIR$/bower_components/jquery/test/unit/attributes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/unit/callbacks.js" afterPath="$PROJECT_DIR$/bower_components/jquery/test/unit/callbacks.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/unit/core.js" afterPath="$PROJECT_DIR$/bower_components/jquery/test/unit/core.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/unit/css.js" afterPath="$PROJECT_DIR$/bower_components/jquery/test/unit/css.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/unit/data.js" afterPath="$PROJECT_DIR$/bower_components/jquery/test/unit/data.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/unit/deferred.js" afterPath="$PROJECT_DIR$/bower_components/jquery/test/unit/deferred.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/unit/deprecated.js" afterPath="$PROJECT_DIR$/bower_components/jquery/test/unit/deprecated.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/unit/dimensions.js" afterPath="$PROJECT_DIR$/bower_components/jquery/test/unit/dimensions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/unit/effects.js" afterPath="$PROJECT_DIR$/bower_components/jquery/test/unit/effects.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/unit/event.js" afterPath="$PROJECT_DIR$/bower_components/jquery/test/unit/event.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/unit/manipulation.js" afterPath="$PROJECT_DIR$/bower_components/jquery/test/unit/manipulation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/unit/offset.js" afterPath="$PROJECT_DIR$/bower_components/jquery/test/unit/offset.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/unit/queue.js" afterPath="$PROJECT_DIR$/bower_components/jquery/test/unit/queue.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/unit/selector.js" afterPath="$PROJECT_DIR$/bower_components/jquery/test/unit/selector.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/unit/serialize.js" afterPath="$PROJECT_DIR$/bower_components/jquery/test/unit/serialize.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/unit/support.js" afterPath="$PROJECT_DIR$/bower_components/jquery/test/unit/support.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bower_components/jquery/test/unit/traversing.js" afterPath="$PROJECT_DIR$/bower_components/jquery/test/unit/traversing.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/custom.css" afterPath="$PROJECT_DIR$/css/custom.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test.html" afterPath="$PROJECT_DIR$/test.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test2.html" afterPath="$PROJECT_DIR$/test2.html" />
     </list>
     <ignored path="bootstrap-test1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -127,11 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.800905">
-              <caret line="361" column="12" selection-start-line="361" selection-start-column="12" selection-end-line="361" selection-end-column="12" />
+            <state vertical-scroll-proportion="-3.6164384">
+              <caret line="8" column="54" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -157,6 +62,26 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="custom.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css/custom.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.33715925">
+              <caret line="649" column="6" selection-start-line="649" selection-start-column="6" selection-end-line="649" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.230769">
+              <caret line="5" column="24" selection-start-line="4" selection-start-column="8" selection-end-line="6" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="ace-extra.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ace/assets/js/ace-extra.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -167,24 +92,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery.dataTables.bootstrap.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ace/assets/js/jquery.dataTables.bootstrap.js">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ace/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="40" column="23" selection-start-line="40" selection-start-column="23" selection-end-line="40" selection-end-column="23" />
-              <folding />
+            <state vertical-scroll-proportion="-18.615385">
+              <caret line="1633" column="48" selection-start-line="1632" selection-start-column="48" selection-end-line="1633" selection-end-column="48" />
+              <folding>
+                <marker date="1450944871515" expanded="true" signature="57261:57368" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ace/index.html">
+      <file leaf-file-name="test2.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.942857">
-              <caret line="1938" column="52" selection-start-line="1938" selection-start-column="8" selection-end-line="1938" selection-end-column="52" />
+            <state vertical-scroll-proportion="-18.615385">
+              <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
               <folding>
-                <marker date="1450856141328" expanded="true" signature="57239:57346" placeholder="..." />
+                <element signature="n#style#0;n#img#1;n#span#0;n#a#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tooltip-test.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/tooltip-test.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.769231">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="15" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -192,38 +129,8 @@
       <file leaf-file-name="ace.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ace/assets/css/ace.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.8082192">
-              <caret line="2416" column="16" selection-start-line="2416" selection-start-column="16" selection-end-line="2416" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ace-skins.min.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ace/assets/css/ace-skins.min.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="12.295774">
-              <caret line="0" column="2667" selection-start-line="0" selection-start-column="2667" selection-end-line="0" selection-end-column="2667" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="font-awesome.min.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ace/assets/css/font-awesome.min.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.7123288">
-              <caret line="270" column="1" selection-start-line="270" selection-start-column="1" selection-end-line="270" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="font-awesome.min.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/font-awesome.min.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.7123288">
-              <caret line="1250" column="11" selection-start-line="1250" selection-start-column="0" selection-end-line="1250" selection-end-column="23" />
+            <state vertical-scroll-proportion="-5.287671">
+              <caret line="2661" column="14" selection-start-line="2660" selection-start-column="0" selection-end-line="2662" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -234,8 +141,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -250,8 +157,6 @@
         <option value="$PROJECT_DIR$/affix-test1.html" />
         <option value="$PROJECT_DIR$/css/ace.min.css" />
         <option value="$PROJECT_DIR$/index1.html" />
-        <option value="$PROJECT_DIR$/test.html" />
-        <option value="$PROJECT_DIR$/test2.html" />
         <option value="$PROJECT_DIR$/css/custom2.css" />
         <option value="$PROJECT_DIR$/test3.html" />
         <option value="$PROJECT_DIR$/css/custom1.css" />
@@ -270,10 +175,13 @@
         <option value="$PROJECT_DIR$/ace/assets/css/ace.css" />
         <option value="$PROJECT_DIR$/css/font-awesome.min.css" />
         <option value="$PROJECT_DIR$/ace/assets/js/ace.min.js" />
-        <option value="$PROJECT_DIR$/css/custom.css" />
-        <option value="$PROJECT_DIR$/ace/index.html" />
         <option value="$PROJECT_DIR$/ace/assets/js/ace-extra.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/test.html" />
+        <option value="$PROJECT_DIR$/ace/index.html" />
+        <option value="$PROJECT_DIR$/css/tooltip-test.css" />
+        <option value="$PROJECT_DIR$/test2.html" />
+        <option value="$PROJECT_DIR$/css/custom.css" />
       </list>
     </option>
   </component>
@@ -341,6 +249,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap-test1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap-test1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="ace" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -362,10 +284,6 @@
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -382,6 +300,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -476,7 +398,7 @@
     <frame x="-5" y="-5" width="1450" height="880" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19513889" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18958333" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1851369" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -510,14 +432,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/custom.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -562,13 +476,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.153846">
-          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test3.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.461538">
@@ -603,13 +510,6 @@
         <state vertical-scroll-proportion="-12.102564">
           <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.179487">
-          <caret line="88" column="0" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -796,14 +696,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.4931507">
-          <caret line="626" column="21" selection-start-line="626" selection-start-column="21" selection-end-line="626" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ace/assets/css/font-awesome-ie7.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.5128205">
@@ -848,29 +740,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ace/assets/css/ace.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.8082192">
-          <caret line="2416" column="16" selection-start-line="2416" selection-start-column="16" selection-end-line="2416" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ace/assets/css/ace-skins.min.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="12.295774">
           <caret line="0" column="2667" selection-start-line="0" selection-start-column="2667" selection-end-line="0" selection-end-column="2667" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ace/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.942857">
-          <caret line="1938" column="52" selection-start-line="1938" selection-start-column="8" selection-end-line="1938" selection-end-column="52" />
-          <folding>
-            <marker date="1450856141328" expanded="true" signature="57239:57346" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -898,10 +772,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ace/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.615385">
+          <caret line="1633" column="48" selection-start-line="1632" selection-start-column="48" selection-end-line="1633" selection-end-column="48" />
+          <folding>
+            <marker date="1450944871515" expanded="true" signature="57261:57368" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.800905">
-          <caret line="361" column="12" selection-start-line="361" selection-start-column="12" selection-end-line="361" selection-end-column="12" />
+        <state vertical-scroll-proportion="-3.6164384">
+          <caret line="8" column="54" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.230769">
+          <caret line="5" column="24" selection-start-line="4" selection-start-column="8" selection-end-line="6" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.615385">
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#img#1;n#span#0;n#a#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/tooltip-test.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.769231">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ace/assets/css/ace.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.287671">
+          <caret line="2661" column="14" selection-start-line="2660" selection-start-column="0" selection-end-line="2662" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33715925">
+          <caret line="649" column="6" selection-start-line="649" selection-start-column="6" selection-end-line="649" selection-end-column="6" />
           <folding />
         </state>
       </provider>
