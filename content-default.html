@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Simple Sidebar</h1>
+
+<p>This template has a responsive menu toggling system. The menu will appear collapsed on
+    smaller
+    screens, and will appear non-collapsed on larger screens. When toggled using the button
+    below, the
+    menu will appear/disappear. On small screens, the page content will be pushed off
+    canvas.</p>
+
+<p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p>
+
+<div>
+    <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+        开始演示模态框
+    </button>
+    <a class="btn btn-lg btn-default"
+       data-toggle="modal"
+       data-target="#largeModal"
+       href="remote-page.html">Click to open Modal</a>
+    <a class="btn btn-lg btn-default"
+       data-toggle="modal"
+       data-target="#largeModal2"
+       href="tabbed-modal.html">Click to open Tabbed Modal</a>
+    <a class="btn btn-lg btn-default"
+       data-toggle="modal"
+       data-target="#largeModal3"
+       href="remote-page3.html">Click to open Modal2</a>
+
+    <script>
+        //BootstrapDialog.alert('I want banana!');
+    </script>
+
+    <!-- 模态框(Modal) -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog"
+         aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">模态框(Modal)标题</h4>
+                </div>
+                <div class="modal-body">
+                    在这里添加一些文本
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">
+                        关闭
+                    </button>
+                    <button type="button" class="btn btn-primary">提交更改</button>
+                </div>
+            </div><!-- /.modal content -->
+        </div>
+    </div>
+
+    <!-- /.modal -->
+    <!-- 模态框(Modal) -->
+    <div class="modal bootstrap-dialog type-primary fade size-normal in" id="largeModal"
+         tabindex="-1"
+         role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog ">
+            <div class="modal-content">
+
+            </div><!-- /.modal content -->
+        </div>
+    </div>
+    <!-- /.modal -->
+
+    <!-- 模态框(Modal) -->
+    <div class="modal fade" id="largeModal2" tabindex="-1" role="dialog"
+         aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+            </div><!-- /.modal content -->
+        </div>
+    </div>
+    <!-- /.modal -->
+
+    <!-- 模态框(Modal) -->
+    <div class="modal fade" id="largeModal3" tabindex="-1" role="dialog"
+         aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+            </div><!-- /.modal content -->
+        </div>
+    </div>
+    <!-- /.modal -->
+</body>
+</html>

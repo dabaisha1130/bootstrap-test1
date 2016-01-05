@@ -1,0 +1,282 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+    <title>Bootstrap 模板</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--HTML5 Shim 和Response.js用于让IE8支持HTML5元素和媒体查询-->
+    <!--注意：如果通过file://引入Response.js文件，则该文件无法起效果-->
+
+    <script src="./jquery-1.5.1.min.js"></script>
+    <script>
+        function loadUrl(url) {
+            if (url != null){
+                $(".main-content").load(url);
+            }
+
+        }
+
+        function test(){
+            var a = 0;
+            //a(1);
+            alert(a);
+        }
+
+        $(document).ready(function(){
+           test();
+        });
+    </script>
+
+</head>
+<body>
+
+<div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Project name</a>
+        </div>
+
+        <div class="collapse navbar-collapse pull-right">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#"><span class="glyphicon glyphicon-home">Home</span></a></li>
+                <li><a href="javascript:loadUrl()"><span class="glyphicon glyphicon-shopping-cart">Shop</span></a></li>
+                <li><a href="#support"><span class="glyphicon glyphicon-headphones">Support</span></a></li>
+                <li><a href="#menu-toggle"><span class="glyphicon glyphicon-headphones"
+                                                 id="menu-toggle">Toggle Menu</span></a></li>
+                <li><a href="#modal-toggle"><span class="glyphicon glyphicon-headphones"
+                                                  id="modal-toggle">Toggle Modal</span></a></li>
+            </ul>
+        </div><!-- /.nav-collapse -->
+
+    </div><!-- /.container -->
+</div>
+<div class="main">
+    <div class=" sidebar span4 hidden-phone">
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading sidebar-heading">
+                    <div class="sidebar-shortcuts" id="sidebar-shortcuts">
+                        <div class="sidebar-shortcuts-large" id="sidebar-shortcuts-large">
+                            <button class="btn btn-success">
+                                <i class="icon-signal"></i>
+                            </button>
+
+                            <button class="btn btn-info">
+                                <i class="icon-pencil"></i>
+                            </button>
+
+                            <button class="btn btn-warning">
+                                <i class="icon-group"></i>
+                            </button>
+
+                            <button class="btn btn-danger">
+                                <i class="icon-cogs"></i>
+                            </button>
+                        </div>
+
+                        <div class="sidebar-shortcuts-mini" id="sidebar-shortcuts-mini">
+                            <span class="btn btn-success"></span>
+
+                            <span class="btn btn-info"></span>
+
+                            <span class="btn btn-warning"></span>
+
+                            <span class="btn btn-danger"></span>
+                        </div>
+                    </div><!-- #sidebar-shortcuts -->
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in">
+                    <ul class="nav sidebar-nav">
+                        <li class="active">
+                            <a href="javascript:loadUrl('content-default.html')">
+                                <i class="icon-dashboard test"></i>
+                                <span class="menu-text"> 控制台 </span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript:loadUrl('tab-page.html')">
+                                <i class="icon-text-width"></i>
+                                <span class="menu-text"> 标签页 </span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#" class="dropdown-toggle">
+                                <i class="icon-desktop"></i>
+                                <span class="menu-text"> UI 组件  <b class="arrow icon-angle-down pull-right"></b></span>
+                            </a>
+
+                            <ul class="submenu">
+                                <li>
+                                    <a href="elements.html">
+                                        <i class="icon-double-angle-right"></i>
+                                        <span class="menu-text">组件</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="buttons.html">
+                                        <i class="icon-double-angle-right"></i>
+                                        <span class="menu-text">按钮 &amp; 图表</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="treeview.html">
+                                        <i class="icon-double-angle-right"></i>
+                                        <span class="menu-text">树菜单</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="jquery-ui.html">
+                                        <i class="icon-double-angle-right"></i>
+                                        <span class="menu-text">jQuery UI</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="nestable-list.html">
+                                        <i class="icon-double-angle-right"></i>
+                                        <span class="menu-text">可拖拽列表</span>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="dropdown-toggle">
+                                        <i class="icon-double-angle-right"></i>
+                                        <span class="menu-text">三级菜单</span>
+                                        <b class="arrow icon-angle-down pull-right"></b>
+                                    </a>
+
+                                    <ul class="submenu">
+                                        <li>
+                                            <a href="#">
+                                                <i class="icon-leaf"></i>
+                                                <span class="menu-text">第一级</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="#" class="dropdown-toggle">
+                                                <i class="icon-pencil"></i>
+                                                <span class="menu-text">第四级</span>
+                                                <b class="arrow icon-angle-down pull-right"></b>
+                                            </a>
+
+                                            <ul class="submenu">
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="icon-plus"></i>
+                                                        <span class="menu-text"> 添加产品</span>
+                                                    </a>
+                                                </li>
+
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="icon-eye-open"></i>
+                                                        <span class="menu-text">查看商品</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+
+                    <div class="sidebar-collapse" id="sidebar-collapse">
+                        <i class="icon-double-angle-left" data-icon="icon-double-angle-left"></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="container-fluid">
+            <div class="row-fluid no-gutter">
+
+                <div class="col-xs-12 col-md-12 main-content">
+                    <div class="main-content">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--jQuery (Bootstrap 的JavaScript插件需要引入jQuery) -->
+
+<!--包括所有已编译的插件-->
+
+
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle, .sidebar-collapse").click(function (e) {
+        e.preventDefault();
+        // $("#wrapper").toggleClass("toggled");
+        //$("#sidebar-wrapper").toggleClass("menu-min");
+        $(".main").toggleClass("menu-min");
+
+        var c = $("#sidebar-wrapper").hasClass("menu-min");
+        if (c) {
+            $(".sidebar-collapse > .icon-double-angle-left").addClass("icon-double-angle-right");
+            $(".sidebar-collapse > .icon-double-angle-right").removeClass("icon-double-angle-left");
+        } else {
+            $(".sidebar-collapse > .icon-double-angle-right").addClass("icon-double-angle-left");
+            $(".sidebar-collapse > .icon-double-angle-left").removeClass("icon-double-angle-right");
+        }
+    });
+
+    $("#sidebar-collapse ").on("click", function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+        $(".sidebar").toggleClass("menu-min");
+
+        var c = $("#sidebar-wrapper").hasClass("menu-min");
+        if (c) {
+            $(".sidebar-collapse > .icon-double-angle-left").addClass("icon-double-angle-right");
+            $(".sidebar-collapse > .icon-double-angle-right").removeClass("icon-double-angle-left");
+        } else {
+            $(".sidebar-collapse > .icon-double-angle-right").addClass("icon-double-angle-left");
+            $(".sidebar-collapse > .icon-double-angle-left").removeClass("icon-double-angle-right");
+        }
+    });
+
+    $("#sidebar-collapse").on("hover", function (e) {
+        var isMin = $("#sidebar-wrapper").hasClass("menu-min");
+        console.log(isMin);
+        if (isMin) {
+
+        }
+    });
+
+    $("#modal-toggle").click(function (e) {
+        e.preventDefault();
+        console.log("toggled");
+        $("#modal-test").toggleClass("toggled");
+        $("#modal-backdrop").toggleClass("toggled");
+    });
+
+    $(".dropdown-toggle").on("click", function (h) {
+        $(this).parent().toggleClass("open");
+    });
+
+</script>
+
+</body>
+</html>

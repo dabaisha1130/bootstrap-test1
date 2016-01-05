@@ -1,0 +1,63 @@
+<!--
+<div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+        &times;
+    </button>
+
+</div>
+-->
+<link href="tabbed-modal.css" rel="stylesheet">
+
+<!-- 模态框(Modal) -->
+
+<div class="tabbed-modal">
+<div class="modal-header  navbar-default nav-primary ">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+        &times;
+    </button>
+    <ul id="myTab" class="nav nav-pills">
+        <li class="active">
+            <a href="#home" data-toggle="pill">
+                W3Cschool Home
+            </a>
+        </li>
+        <li>
+            <a href="#ios" data-toggle="pill">IOS</a>
+        </li>
+        <li class="dropdown">
+            <a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown">Java<b class="caret"></b></a>
+            <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+                <li><a href="#jmeter" tabindex="-1" data-toggle="pill">jmeter</a> </li>
+                <li><a href="#ejb" tabindex="-1" data-toggle="pill">ejb</a> </li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<div class="modal-body">
+
+    <form role="form" class="form-inline">
+        <div class="form-group">
+            <label for="exampleInputEmail">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Email password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> Remember me
+                </label>
+            </div>
+        </div>
+
+    </form>
+
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal">
+        关闭
+    </button>
+    <button type="button" class="btn btn-primary">提交更改</button>
+</div>
+</div>
+

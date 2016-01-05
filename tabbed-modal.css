@@ -1,0 +1,20 @@
+.tabbed-modal{
+
+}
+
+.tabbed-modal .modal-header{
+    padding-top:5px;
+    padding-bottom:0;
+    background-color: #ffab00;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.tabbed-modal button.close{
+    margin-top:0.3em;
+    margin-rigth:0.3em;
+    padding-right:0.3em;
+}
