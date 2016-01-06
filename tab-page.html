@@ -4,48 +4,75 @@
 
 <script src="tab-test.js"></script>
 
+<style>
+    .row, .row-fluid{
+        overflow:hidden;
+    }
+    .row, .row-fluid [class*="col-"]{
+        margin-bottom:-99999px;
+        padding-bottom:99999px;
+    }
+
+</style>
+
 <div class="container-fluid">
     <!-- tabs1 -->
     <div class="row-fluid">
         <div class="col-sm-12 col-md-6 col-lg-6" style="background-color:#c0c0c0;">
-            <ul id="myTab" class="nav nav-tabs">
+            <ul class="nav nav-tabs" id="myTab">
                 <li class="active">
-                    <a href="#home" data-toggle="tab">
-                        W3Cschool Home
+                    <a data-toggle="tab" href="#home">
+                        <i class="green icon-home bigger-110"></i>
+                        Home
                     </a>
                 </li>
+
                 <li>
-                    <a href="#ios" data-toggle="tab">IOS</a>
+                    <a data-toggle="tab" href="#profile">
+                        Messages
+                        <span class="badge badge-danger">4</span>
+                    </a>
                 </li>
+
                 <li class="dropdown">
-                    <a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown">Java<b class="caret"></b></a>
-                    <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
-                        <li><a href="#jmeter" tabindex="-1" data-toggle="tab">jmeter</a> </li>
-                        <li><a href="#ejb" tabindex="-1" data-toggle="tab">ejb</a> </li>
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                        Dropdown &nbsp;
+                        <i class="icon-caret-down bigger-110 width-auto"></i>
+                    </a>
+
+                    <ul class="dropdown-menu dropdown-info">
+                        <li>
+                            <a data-toggle="tab" href="#dropdown1">@fat</a>
+                        </li>
+
+                        <li>
+                            <a data-toggle="tab" href="#dropdown2">@mdo</a>
+                        </li>
                     </ul>
                 </li>
             </ul>
-            <div id="myTabContent" class="tab-content">
-                <div class="tab-pane fade in active" id="home">
-                    <p>W3Cschoool菜鸟教程是一个提供最新的web技术站点，本站免费提供了建站相关的技术文档，帮助广大web技术爱好者快速入门并建立自己的网站。菜鸟先飞早入行——学的不仅是技术，更是梦想。</p>
+
+            <div class="tab-content">
+                <div id="home" class="tab-pane in active">
+                    <p>Raw denim you probably haven't heard of them jean shorts Austin.</p>
                 </div>
-                <div class="tab-pane fade" id="ios">
-                    <p>iOS 是一个由苹果公司开发和发布的手机操作系统。最初是于 2007 年首次发布 iPhone、iPod Touch 和 Apple
-                        TV。iOS 派生自 OS X，它们共享 Darwin 基础。OS X 操作系统是用在苹果电脑上，iOS 是苹果的移动版本。</p>
+
+                <div id="profile" class="tab-pane">
+                    <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.</p>
                 </div>
-                <div class="tab-panefade" id="jmeter">
-                    <p>jMeter 是一款开源的测试软件。它是 100% 纯 Java 应用程序，用于负载和性能测试。</p>
+
+                <div id="dropdown1" class="tab-pane">
+                    <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic lomo retro fanny pack lo-fi farm-to-table readymade.</p>
                 </div>
-                <div class="tab-pane fade" id="ejb">
-                    <p>Enterprise Java Beans（EJB）是一个创建高度可扩展性和强大企业级应用程序的开发架构，部署在兼容应用程序服务器（比如 JBOSS、Web Logic 等）的 J2EE 上。
-                    </p>
+
+                <div id="dropdown2" class="tab-pane">
+                    <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan DIY, art party locavore wolf cliche high life echo park Austin.</p>
                 </div>
             </div>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-6" style="background-color:#0f0;">
             <div class="tab-table2">
                 <ul id="myTabs" class="nav nav-tabs">
-
                     <li><a href="#home21"  data-toggle="tab" data-tab-always-refresh="true" data-tab-url="test1.html">home21</a></li>
                     <li><a href="#tab21"  data-toggle="tab" data-tab-always-refresh="true" data-tab-url="test2.html">tab21</a></li>
                     <li><a href="#tab22"  data-toggle="tab" data-tab-always-refresh="true" data-tab-url="test3.html">tab22</a></li>
