@@ -13,7 +13,7 @@ $(document).ready(function(){
 
 });
 
-$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+$('#myTabs a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
     var $this = $(this);
     var $target = $($this.attr('href'));
     var tabUrl = $this.attr('data-tab-url');

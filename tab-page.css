@@ -1,0 +1,223 @@
+
+/*   bootstrap  same height col */
+.same-height-col .row, .same-height-col .row-fluid{
+    overflow: hidden;
+}
+
+.same-height-col  .row [class*="col-"], .same-height-col  .row-fluid [class*="col-"]{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+/* bootstrap same height col */
+
+
+.tab-content {
+    /*border: 1px solid #c5d0dc;*/
+    padding: 16px 12px;
+    position: relative;
+    z-index: 11
+}
+
+.tab-content li .active{
+    border-top-color:transparent;
+}
+
+.tab-container{
+    margin-top:5px;
+    border: 1px solid #c5d0dc;
+}
+
+.tabs-top .nav-tabs > li.active {
+    border-bottom-color: transparent;
+    border-top: 2px solid #4c8fbd;
+    margin-top:-1px;
+}
+
+/* tabs-below */
+.tabs-below > .nav-tabs {
+    top: auto;
+    margin-bottom: 0;
+    margin-top: 1px;
+    border-color: #c5d0dc;
+    /*border-bottom-width: 0;*/
+    border-top: 1px solid #ddd;
+}
+
+.tabs-below > .nav-tabs > li.active {
+    border-top-color: transparent;
+    border-bottom: 2px solid #4c8fbd;
+}
+/* tabs-below */
+
+/* tabs left*/
+.tabs-left .nav-tabs {
+    top: auto;
+    margin-bottom: 0;
+    border:1px solid #c5d0dc;
+    float: left;
+}
+.tabs-left .tab-content, .tabs-right .tab-content {
+    overflow: auto;
+}
+.tabs-left .nav-tabs > li{
+    margin-bottom:0;
+}
+.tabs-left li.active{
+    border-left:2px solid #4c8fbd;
+    border-right-color:transparent;
+}
+/* tabs left*/
+
+/*  dropdown  */
+
+.dropdown-menu {
+    border-radius: 0 !important;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2)
+}
+
+.dropdown-menu > li > a {
+    font-size: 13px;
+    padding-left: 11px;
+    padding-right: 11px;
+    margin-bottom: 1px;
+    margin-top: 1px
+}
+
+.dropdown-menu.dropdown-only-icon {
+    min-width: 50px
+}
+
+.dropdown-menu.dropdown-only-icon > li {
+    float: left;
+    margin: 0 4px
+}
+
+.dropdown-menu.dropdown-only-icon > li > a [class*="icon-"] {
+    width: 18px;
+    display: inline-block
+}
+
+.dropdown-menu.dropdown-only-icon > li > a .icon-2x {
+    width: 36px
+}
+
+.dropdown-menu li a:hover, .dropdown-menu li a:focus, .dropdown-menu li a:active, .dropdown-menu li.active a, .dropdown-menu li.active a:hover, .dropdown-menu .dropdown-submenu:hover > a, .nav-tabs .dropdown-menu li > a:focus {
+    background: #4f99c6;
+    color: #fff
+}
+
+.dropdown-default li a:hover, .dropdown-default li a:focus, .dropdown-default li a:active, .dropdown-default li.active a, .dropdown-default li.active a:hover, .dropdown-default .dropdown-submenu:hover > a, .nav-tabs .dropdown-default li > a:focus {
+    background: #abbac3;
+    color: #fff
+}
+
+.dropdown-info li a:hover, .dropdown-info li a:focus, .dropdown-info li a:active, .dropdown-info li.active a, .dropdown-info li.active a:hover, .dropdown-info .dropdown-submenu:hover > a, .nav-tabs .dropdown-info li > a:focus {
+    background: #6fb3e0;
+    color: #fff
+}
+
+.dropdown-primary li a:hover, .dropdown-primary li a:focus, .dropdown-primary li a:active, .dropdown-primary li.active a, .dropdown-primary li.active a:hover, .dropdown-primary .dropdown-submenu:hover > a, .nav-tabs .dropdown-primary li > a:focus {
+    background: #428bca;
+    color: #fff
+}
+
+.dropdown-success li a:hover, .dropdown-success li a:focus, .dropdown-success li a:active, .dropdown-success li.active a, .dropdown-success li.active a:hover, .dropdown-success .dropdown-submenu:hover > a, .nav-tabs .dropdown-success li > a:focus {
+    background: #87b87f;
+    color: #fff
+}
+
+.dropdown-warning li a:hover, .dropdown-warning li a:focus, .dropdown-warning li a:active, .dropdown-warning li.active a, .dropdown-warning li.active a:hover, .dropdown-warning .dropdown-submenu:hover > a, .nav-tabs .dropdown-warning li > a:focus {
+    background: #ffa24d;
+    color: #fff
+}
+
+.dropdown-danger li a:hover, .dropdown-danger li a:focus, .dropdown-danger li a:active, .dropdown-danger li.active a, .dropdown-danger li.active a:hover, .dropdown-danger .dropdown-submenu:hover > a, .nav-tabs .dropdown-danger li > a:focus {
+    background: #d15b47;
+    color: #fff
+}
+
+.dropdown-inverse li a:hover, .dropdown-inverse li a:focus, .dropdown-inverse li a:active, .dropdown-inverse li.active a, .dropdown-inverse li.active a:hover, .dropdown-inverse .dropdown-submenu:hover > a, .nav-tabs .dropdown-inverse li > a:focus {
+    background: #555;
+    color: #fff
+}
+
+.dropdown-purple li a:hover, .dropdown-purple li a:focus, .dropdown-purple li a:active, .dropdown-purple li.active a, .dropdown-purple li.active a:hover, .dropdown-purple .dropdown-submenu:hover > a, .nav-tabs .dropdown-purple li > a:focus {
+    background: #9585bf;
+    color: #fff
+}
+
+.dropdown-pink li a:hover, .dropdown-pink li a:focus, .dropdown-pink li a:active, .dropdown-pink li.active a, .dropdown-pink li.active a:hover, .dropdown-pink .dropdown-submenu:hover > a, .nav-tabs .dropdown-pink li > a:focus {
+    background: #d6487e;
+    color: #fff
+}
+
+.dropdown-grey li a:hover, .dropdown-grey li a:focus, .dropdown-grey li a:active, .dropdown-grey li.active a, .dropdown-grey li.active a:hover, .dropdown-grey .dropdown-submenu:hover > a, .nav-tabs .dropdown-grey li > a:focus {
+    background: #a0a0a0;
+    color: #fff
+}
+
+.dropdown-light li a:hover, .dropdown-light li a:focus, .dropdown-light li a:active, .dropdown-light li.active a, .dropdown-light li.active a:hover, .dropdown-light .dropdown-submenu:hover > a, .nav-tabs .dropdown-light li > a:focus {
+    background: #e7e7e7;
+    color: #333
+}
+
+.dropdown-lighter li a:hover, .dropdown-lighter li a:focus, .dropdown-lighter li a:active, .dropdown-lighter li.active a, .dropdown-lighter li.active a:hover, .dropdown-lighter .dropdown-submenu:hover > a, .nav-tabs .dropdown-lighter li > a:focus {
+    background: #efefef;
+    color: #444
+}
+
+.dropdown-lightest li a:hover, .dropdown-lightest li a:focus, .dropdown-lightest li a:active, .dropdown-lightest li.active a, .dropdown-lightest li.active a:hover, .dropdown-lightest .dropdown-submenu:hover > a, .nav-tabs .dropdown-lightest li > a:focus {
+    background: #f3f3f3;
+    color: #444
+}
+
+.dropdown-yellow li a:hover, .dropdown-yellow li a:focus, .dropdown-yellow li a:active, .dropdown-yellow li.active a, .dropdown-yellow li.active a:hover, .dropdown-yellow .dropdown-submenu:hover > a, .nav-tabs .dropdown-yellow li > a:focus {
+    background: #fee188;
+    color: #444
+}
+
+.dropdown-yellow2 li a:hover, .dropdown-yellow2 li a:focus, .dropdown-yellow2 li a:active, .dropdown-yellow2 li.active a, .dropdown-yellow2 li.active a:hover, .dropdown-yellow2 .dropdown-submenu:hover > a, .nav-tabs .dropdown-yellow2 li > a:focus {
+    background: #f9e8b3;
+    color: #444
+}
+
+.dropdown-light-blue li a:hover, .dropdown-light-blue li a:focus, .dropdown-light-blue li a:active, .dropdown-light-blue li.active a, .dropdown-light-blue li.active a:hover, .dropdown-light-blue .dropdown-submenu:hover > a, .nav-tabs .dropdown-light-blue li > a:focus {
+    background: #ecf3f9;
+    color: #456
+}
+
+.dropdown-light .dropdown-submenu:hover > a:after, .dropdown-lighter .dropdown-submenu:hover > a:after, .dropdown-lightest .dropdown-submenu:hover > a:after {
+    border-left-color: #444
+}
+
+.dropdown-menu.dropdown-close {
+    top: 92%;
+    left: -5px
+}
+
+.dropdown-menu.dropdown-close.pull-right {
+    left: auto;
+    right: -5px
+}
+
+.dropdown-menu.dropdown-closer {
+    top: 80%;
+    left: -10px
+}
+
+.dropdown-menu.dropdown-closer.pull-right {
+    right: -10px;
+    left: auto
+}
+
+.dropdown-submenu > .dropdown-menu {
+    border-radius: 0
+}
+
+.dropdown-submenu > a:after {
+    margin-right: -5px
+}
+
+/*  dropdown  */
+
