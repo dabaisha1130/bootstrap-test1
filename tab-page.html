@@ -4,29 +4,41 @@
 <link href="tab-page.css" rel="stylesheet">
 <script src="tab-test.js"></script>
 
+<script>
+    $(function () { $("[data-toggle='tooltip'], [data-rel='tooltip']").tooltip(); });
+</script>
+
 <style>
     .spinner-preview {
-        width:100px;
-        height:100px;
-        text-align:center;
-        margin-top:60px;
+        width: 100px;
+        height: 100px;
+        text-align: center;
+        margin-top: 60px;
     }
 
     .dropdown-preview {
-        margin:0 5px;
-        display:inline-block;
+        margin: 0 5px;
+        display: inline-block;
     }
-    .dropdown-preview  > .dropdown-menu {
+
+    .dropdown-preview > .dropdown-menu {
         display: block;
         position: static;
         margin-bottom: 5px;
     }
+    .test{
+        min-height:200px;
+    }
+    .hao{
+        min-height:150px;
+        border:1px solid #0b6cbc;
+    }
 </style>
 
-<div class="container-fluid same-height-col">
+<div class="container-fluid">
     <!-- tabs1 -->
-    <div class="row-fluid" style="min-height: 200px;padding:10px;">
-        <div class="col-sm-12 col-md-6 col-lg-6" style="min-height: 180px;border:1px solid #0f0;">
+    <div class="row-fluid hao" >
+        <div class="col-sm-12 col-md-6 col-lg-6" >
             <div class="tabs-top tab-container">
                 <ul class="nav nav-tabs" id="myTab">
                     <li class="active">
@@ -82,12 +94,15 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6" style="min-height: 180px;border:1px solid #00f;">
+        <div class="col-sm-12 col-md-6 col-lg-6">
             <div class="tabs-top tab-container">
                 <ul id="myTabs" class="nav nav-tabs">
-                    <li><a href="#home21"  data-toggle="tab" data-tab-always-refresh="true" data-tab-url="test1.html">home21</a></li>
-                    <li><a href="#tab21"  data-toggle="tab" data-tab-always-refresh="true" data-tab-url="test2.html">tab21</a></li>
-                    <li><a href="#tab22"  data-toggle="tab" data-tab-always-refresh="true" data-tab-url="test3.html">tab22</a></li>
+                    <li><a href="#home21" data-toggle="tab" data-tab-always-refresh="true" data-tab-url="test1.html">home21</a>
+                    </li>
+                    <li><a href="#tab21" data-toggle="tab" data-tab-always-refresh="true" data-tab-url="test2.html">tab21</a>
+                    </li>
+                    <li><a href="#tab22" data-toggle="tab" data-tab-always-refresh="true" data-tab-url="test3.html">tab22</a>
+                    </li>
                 </ul>
                 <div id="tabContent2" class="tab-content">
                     <div class="tab-pane fade in active" id="home21">
@@ -105,33 +120,116 @@
     </div>
     <!-- tabs1 -->
 
-    <div class="row-fluid" style="min-height: 200px;padding:10px;">
+    <!-- row2 -->
+    <div class="row-fluid hao">
+        <div class="col-sm-12 col-md-6 col-lg-6 ">
+            <div class="tabs-top tab-container">
+                <ul class="nav nav-tabs tab-color-blue background-blue" id="myTab6">
+                    <li class="active">
+                        <a data-toggle="tab" href="#home6">
+                            <i class="green icon-home bigger-110"></i>
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a data-toggle="tab" href="#profile6">
+                            Messages
+                            <span class="badge badge-success">4</span>
+                        </a>
+                    </li>
+
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+                            Dropdown &nbsp;
+                            <i class="icon-caret-down bigger-110 width-auto"></i>
+                        </a>
+
+                        <ul class="dropdown-menu dropdown-info">
+                            <li>
+                                <a data-toggle="tab" href="#dropdown61">@fat</a>
+                            </li>
+
+                            <li>
+                                <a data-toggle="tab" href="#dropdown62">@mdo</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div id="home6" class="tab-pane in active">
+                        <p>Raw denim you probably haven't heard of them jean shorts Austin.</p>
+                    </div>
+
+                    <div id="profile6" class="tab-pane">
+                        <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee squid.</p>
+                    </div>
+
+                    <div id="dropdown61" class="tab-pane">
+                        <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's organic
+                            lomo retro fanny pack lo-fi farm-to-table readymade.</p>
+                    </div>
+
+                    <div id="dropdown62" class="tab-pane">
+                        <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold out
+                            master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland seitan
+                            DIY, art party locavore wolf cliche high life echo park Austin.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="tabs-top tab-container">
+                <ul id="myTabs7" class="nav nav-tabs">
+                    <li><a href="#home21" data-toggle="tab" data-tab-always-refresh="true" data-tab-url="test1.html">home21</a>
+                    </li>
+                    <li><a href="#tab21" data-toggle="tab" data-tab-always-refresh="true" data-tab-url="test2.html">tab21</a>
+                    </li>
+                    <li><a href="#tab22" data-toggle="tab" data-tab-always-refresh="true" data-tab-url="test3.html">tab22</a>
+                    </li>
+                </ul>
+                <div id="tabContent7" class="tab-content">
+                    <div class="tab-pane fade in active" id="home71">
+
+                    </div>
+                    <div class="tab-pane  fade in" id="tab71">
+
+                    </div>
+                    <div class="tab-pane  fade in" id="tab72">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  <!-- row2 -->
+
+    <div class="row-fluid hao">
         <div class="col-sm-12 col-md-6 col-lg-6">
             <div class="tabs-below tab-container">
                 <div class="tab-content">
-                        <div id="home31" class="tab-pane in active">
-                            <p>Raw denim you probably haven't heard of them jean shorts Austin.</p>
-                        </div>
-
-                        <div id="profile31" class="tab-pane">
-                            <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee
-                                squid.</p>
-                        </div>
-
-                        <div id="dropdown31" class="tab-pane">
-                            <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's
-                                organic
-                                lomo retro fanny pack lo-fi farm-to-table readymade.</p>
-                        </div>
-
-                        <div id="dropdown32" class="tab-pane">
-                            <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold
-                                out
-                                master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland
-                                seitan
-                                DIY, art party locavore wolf cliche high life echo park Austin.</p>
-                        </div>
+                    <div id="home31" class="tab-pane in active">
+                        <p>Raw denim you probably haven't heard of them jean shorts Austin.</p>
                     </div>
+
+                    <div id="profile31" class="tab-pane">
+                        <p>Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee
+                            squid.</p>
+                    </div>
+
+                    <div id="dropdown31" class="tab-pane">
+                        <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's
+                            organic
+                            lomo retro fanny pack lo-fi farm-to-table readymade.</p>
+                    </div>
+
+                    <div id="dropdown32" class="tab-pane">
+                        <p>Trust fund seitan letterpress, keytar raw denim keffiyeh etsy art party before they sold
+                            out
+                            master cleanse gluten-free squid scenester freegan cosby sweater. Fanny pack portland
+                            seitan
+                            DIY, art party locavore wolf cliche high life echo park Austin.</p>
+                    </div>
+                </div>
                 <ul class="nav nav-tabs" id="myTab3">
                     <li class="active">
                         <a data-toggle="tab" href="#home31">
@@ -167,7 +265,7 @@
 
             </div>
         </div>
-        <div class="col-sm-6 col-md-6 col-lg-6" style="border:1px solid #00f; padding:10px;">
+        <div class="col-sm-6 col-md-6 col-lg-6">
             <div class="tabbable tabs-left tab-container">
                 <ul class="nav nav-tabs nav-stacked">
                     <li class="active">
@@ -201,11 +299,15 @@
                 <div class="tab-content">
                     <div id="home41" class="tab-pane in active">
                         <h4>The Markup</h4>
+
                         <p>ddddddddddddddddd</p>
                     </div>
                     <div id="profile41" class="tab-pane">
                         <h4>Pane 2 Content</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse euismod congue bibendum. Aliquam erat volutpat. Phasellus eget justo lacus. Vivamus pharetra ullamcorper massa, nec ultricies metus gravida egestas.</p>
+
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse euismod congue bibendum.
+                            Aliquam erat volutpat. Phasellus eget justo lacus. Vivamus pharetra ullamcorper massa, nec
+                            ultricies metus gravida egestas.</p>
                     </div>
                     <div id="dropdown41" class="tab-pane">
                         <p>Etsy mixtape wayfarers, ethical wes anderson tofu before they sold out mcsweeney's
@@ -247,18 +349,18 @@
         </div>  <!--  col-sm-6 col-md-6 col-lg-6 -->
     </div>  <!-- row-fluid -->
 
-    <div class="row-fluid" style="min-height:200px; border:1px solid #000;">
-        <div class="col-sm-12 col-md-6 col-lg-6" style="background-color:#f00;">
-          <div class="dropdown" role="menu">
-              <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Dropdown trigger<span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dLabel">
-                  <li><a href="#">dropdown-menu1</a></li>
-                  <li><a href="#">dropdown-menu2</a></li>
-                  <li><a href="#">dropdown-menu3</a></li>
-              </ul>
-          </div>
+    <div class="row-fluid hao">
+        <div class="col-sm-12 col-md-6 col-lg-6">
+            <div class="dropdown" role="menu">
+                <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown trigger<span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dLabel">
+                    <li><a href="#">dropdown-menu1</a></li>
+                    <li><a href="#">dropdown-menu2</a></li>
+                    <li><a href="#">dropdown-menu3</a></li>
+                </ul>
+            </div>
         </div>
         <div class="col-sm-12 col-md-6 col-lg-6" style="background-color:#0f0;">
             <div class="dropdown" role="menu">
@@ -275,8 +377,8 @@
         </div>
     </div>
 
-    <div class="row-fluid same-height-col">
-        <div class="col-sm-6 col-md-6 col-lg-6" style="min-height:200px;">
+    <div class="row-fluid hao">
+        <div class="col-sm-6 col-md-6 col-lg-6">
             <div class="dropdown">
                 <button type="button" class="btn dropdown-toggle" id="dropdownMenu3"
                         data-toggle="dropdown">Bootstrap下拉菜单 向右对齐实例
@@ -302,7 +404,7 @@
         <div class="col-sm-12 col-md-6 col-lg-6" style="background-color:#0f0;">
             <div class="dropdown-menu">
                 <button type="button" class="btn dropdown-toggle" id="dropdownMenu4"
-                    data-toggle="dropdown">
+                        data-toggle="dropdown">
                     Bootstrap下拉菜单<span class="caret">&nbsp;</span>
                 </button>
                 <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
@@ -314,14 +416,17 @@
                 </ul>
             </div>
             <p>dddddddddddddddddddddddddd</p>
+
             <p>88888888888888888888888888</p>
+
             <p>eeeeeeeeeeeeeeeeeeeeeeeeee</p>
+
             <p>kkkkkkkkkkkkkkkkkkkkkkkkkk</p>
         </div>
     </div> <!-- row fluid -->
 
-    <div class="row-fluid same-height-col">
-        <div class="col-sm-12 col-md-6 col-lg-6" >
+    <div class="row-fluid hao">
+        <div class="col-sm-12 col-md-6 col-lg-6">
             <div class="dropdown">
                 <ul class="dropdown-menu" style="margin:0 5px; display:inline-block;">
                     <li>
@@ -344,9 +449,9 @@
                 </ul>
 
             </div>
-           &nbsp;
+            &nbsp;
         </div>
-        <div class="col-sm-12 col-md-6 col-lg-6" style="background-color:#c4e3f3;min-height:300px;">
+        <div class="col-sm-12 col-md-6 col-lg-6" style="background-color:#c4e3f3;">
             <div class="dropdown">
                 <ul class="dropdown-menu dropdown-danger" style="margin:0 5px; display:inline-block;">
                     <li>
@@ -395,177 +500,183 @@
                 </ul>
             </div>
             <p>&nbsp;</p>
+
             <p>&nbsp;</p>
+
             <p>&nbsp;</p>
+
             <p>&nbsp;</p>
+
             <p>&nbsp;</p>
+
             <p>&nbsp;</p>
+
             <p>&nbsp;</p>
         </div>
     </div> <!-- row-fluid -->
 
-    <div class="row-fluid">
+    <div class="row-fluid same-height-col hao" style="clear:both;">
         <div class="col-sm-12 col-md-6 col-lg-6">
 
-                <h3 class="header smaller lighter green">Dropdowns</h3>
+            <h3 class="header smaller lighter green">Dropdowns</h3>
 
-                <div class="dropdown dropdown-preview">
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="#" tabindex="-1">Action</a>
-                        </li>
+            <div class="dropdown dropdown-preview">
+                <ul class="dropdown-menu">
+                    <li>
+                        <a href="#" tabindex="-1">Action</a>
+                    </li>
 
-                        <li>
-                            <a href="#" tabindex="-1">Another action</a>
-                        </li>
+                    <li>
+                        <a href="#" tabindex="-1">Another action</a>
+                    </li>
 
-                        <li>
-                            <a href="#" tabindex="-1">Something else here</a>
-                        </li>
+                    <li>
+                        <a href="#" tabindex="-1">Something else here</a>
+                    </li>
 
-                        <li class="divider"></li>
+                    <li class="divider"></li>
 
-                        <li>
-                            <a href="#" tabindex="-1">Separated link</a>
-                        </li>
-                    </ul>
-                </div>
+                    <li>
+                        <a href="#" tabindex="-1">Separated link</a>
+                    </li>
+                </ul>
+            </div>
 
-                <div class="dropdown dropdown-preview">
-                    <ul class="dropdown-menu dropdown-danger">
-                        <li>
-                            <a href="#" tabindex="-1">Action</a>
-                        </li>
+            <div class="dropdown dropdown-preview">
+                <ul class="dropdown-menu dropdown-danger">
+                    <li>
+                        <a href="#" tabindex="-1">Action</a>
+                    </li>
 
-                        <li>
-                            <a href="#" tabindex="-1">Another action</a>
-                        </li>
+                    <li>
+                        <a href="#" tabindex="-1">Another action</a>
+                    </li>
 
-                        <li>
-                            <a href="#" tabindex="-1">Something else here</a>
-                        </li>
+                    <li>
+                        <a href="#" tabindex="-1">Something else here</a>
+                    </li>
 
-                        <li class="divider"></li>
+                    <li class="divider"></li>
 
-                        <li class="dropdown-hover">
-                            <a href="#" tabindex="-1" class="clearfix">
-                                <span class="pull-left">More options</span>
+                    <li class="dropdown-hover">
+                        <a href="#" tabindex="-1" class="clearfix">
+                            <span class="pull-left">More options</span>
 
-                                <i class="icon-caret-right pull-right"></i>
-                            </a>
+                            <i class="icon-caret-right pull-right"></i>
+                        </a>
 
-                            <ul class="dropdown-menu dropdown-danger  pull-right">
-                                <li>
-                                    <a href="#" tabindex="-1">Second level link</a>
-                                </li>
+                        <ul class="dropdown-menu dropdown-danger  pull-right">
+                            <li>
+                                <a href="#" tabindex="-1">Second level link</a>
+                            </li>
 
-                                <li>
-                                    <a href="#" tabindex="-1">Second level link</a>
-                                </li>
+                            <li>
+                                <a href="#" tabindex="-1">Second level link</a>
+                            </li>
 
-                                <li>
-                                    <a href="#" tabindex="-1">Second level link</a>
-                                </li>
+                            <li>
+                                <a href="#" tabindex="-1">Second level link</a>
+                            </li>
 
-                                <li>
-                                    <a href="#" tabindex="-1">Second level link</a>
-                                </li>
+                            <li>
+                                <a href="#" tabindex="-1">Second level link</a>
+                            </li>
 
-                                <li>
-                                    <a href="#" tabindex="-1">Second level link</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+                            <li>
+                                <a href="#" tabindex="-1">Second level link</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
 
-                <div class="dropup dropdown-preview">
-                    <ul class="dropdown-menu dropdown-purple">
-                        <li>
-                            <a href="#" tabindex="-1">Action</a>
-                        </li>
+            <div class="dropup dropdown-preview">
+                <ul class="dropdown-menu dropdown-purple">
+                    <li>
+                        <a href="#" tabindex="-1">Action</a>
+                    </li>
 
-                        <li>
-                            <a href="#" tabindex="-1">Another action</a>
-                        </li>
+                    <li>
+                        <a href="#" tabindex="-1">Another action</a>
+                    </li>
 
-                        <li>
-                            <a href="#" tabindex="-1">Something else here</a>
-                        </li>
+                    <li>
+                        <a href="#" tabindex="-1">Something else here</a>
+                    </li>
 
-                        <li class="divider"></li>
+                    <li class="divider"></li>
 
-                        <li class="dropdown-hover dropup">
-                            <a href="#" tabindex="-1">More options</a>
+                    <li class="dropdown-hover dropup">
+                        <a href="#" tabindex="-1">More options</a>
 
-                            <ul class="dropdown-menu pull-right">
-                                <li>
-                                    <a href="#" tabindex="-1">Second level link</a>
-                                </li>
+                        <ul class="dropdown-menu pull-right">
+                            <li>
+                                <a href="#" tabindex="-1">Second level link</a>
+                            </li>
 
-                                <li>
-                                    <a href="#" tabindex="-1">Second level link</a>
-                                </li>
+                            <li>
+                                <a href="#" tabindex="-1">Second level link</a>
+                            </li>
 
-                                <li>
-                                    <a href="#" tabindex="-1">Second level link</a>
-                                </li>
+                            <li>
+                                <a href="#" tabindex="-1">Second level link</a>
+                            </li>
 
-                                <li>
-                                    <a href="#" tabindex="-1">Second level link</a>
-                                </li>
+                            <li>
+                                <a href="#" tabindex="-1">Second level link</a>
+                            </li>
 
-                                <li>
-                                    <a href="#" tabindex="-1">Second level link</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+                            <li>
+                                <a href="#" tabindex="-1">Second level link</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
 
-                <div class="dropup dropdown-preview">
-                    <ul class="dropdown-menu dropdown-light">
-                        <li>
-                            <a href="#" tabindex="-1">Action</a>
-                        </li>
+            <div class="dropup dropdown-preview">
+                <ul class="dropdown-menu dropdown-light">
+                    <li>
+                        <a href="#" tabindex="-1">Action</a>
+                    </li>
 
-                        <li>
-                            <a href="#" tabindex="-1">Another action</a>
-                        </li>
+                    <li>
+                        <a href="#" tabindex="-1">Another action</a>
+                    </li>
 
-                        <li>
-                            <a href="#" tabindex="-1">Something else here</a>
-                        </li>
+                    <li>
+                        <a href="#" tabindex="-1">Something else here</a>
+                    </li>
 
-                        <li class="divider"></li>
+                    <li class="divider"></li>
 
-                        <li class="dropup dropdown-hover">
-                            <a href="#" tabindex="-1">More options</a>
+                    <li class="dropup dropdown-hover">
+                        <a href="#" tabindex="-1">More options</a>
 
-                            <ul class="dropdown-menu pull-left">
-                                <li>
-                                    <a href="#" tabindex="-1">Second level link</a>
-                                </li>
+                        <ul class="dropdown-menu pull-left">
+                            <li>
+                                <a href="#" tabindex="-1">Second level link</a>
+                            </li>
 
-                                <li>
-                                    <a href="#" tabindex="-1">Second level link</a>
-                                </li>
+                            <li>
+                                <a href="#" tabindex="-1">Second level link</a>
+                            </li>
 
-                                <li>
-                                    <a href="#" tabindex="-1">Second level link</a>
-                                </li>
+                            <li>
+                                <a href="#" tabindex="-1">Second level link</a>
+                            </li>
 
-                                <li>
-                                    <a href="#" tabindex="-1">Second level link</a>
-                                </li>
+                            <li>
+                                <a href="#" tabindex="-1">Second level link</a>
+                            </li>
 
-                                <li>
-                                    <a href="#" tabindex="-1">Second level link</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
+                            <li>
+                                <a href="#" tabindex="-1">Second level link</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
 
         </div>
         <div class="col-sm-12 col-md-6 col-lg-6">
@@ -573,4 +684,121 @@
         </div>
     </div>
 
+    <div class="row-fluid ">
+        <div class="col-sm-12 col-md-6 col-lg-6" style="background-color:#f00;">
+            <div class="container" style="margin-top:10px;width:80%;">
+                <div class="accordion-style1 panel-group" id="accordion1">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" class="accordion-toggle" data-parent="#accordion1" href="#collapseOne11"> Collapsible Group Item </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne11" class="panel-collapse collapse in">
+                            <div class="panel-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" class="accordion-toggle" data-parent="#accordion1" href="#collapseTwo12"> Collapsible Group Item #12 </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo12" class="panel-collapse collapse">
+                            <div class="panel-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" class="accordion-toggle" data-parent="#accordion1" href="#collapseThree13"> Collapsible Group Item #13 </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree13" class="panel-collapse collapse">
+                            <div class="panel-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6" style="background-color:#0f0;">
+            <div class="container" style="margin-top:10px;width:80%;">
+                <div class="panel-group accordion-style1" id="accordion2">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" class="accordion-toggle" data-parent="#accordion2" href="#collapseOne21"> Collapsible Group Item #21 </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne21" class="panel-collapse collapse in">
+                            <div class="panel-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" class="accordion-toggle" data-parent="#accordion2" href="#collapseTwo22"> Collapsible Group Item #22 </a>
+                            </h4>
+                        </div>
+                        <div id="collapseTwo22" class="panel-collapse collapse">
+                            <div class="panel-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h4 class="panel-title">
+                                <a data-toggle="collapse" class="accordion-toggle" data-parent="#accordion2" href="#collapseThree23"> Collapsible Group Item #23 </a>
+                            </h4>
+                        </div>
+                        <div id="collapseThree23" class="panel-collapse collapse">
+                            <div class="panel-body"> Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS. </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- row-fluid -->
+
+    <div class="row-fluid hao">
+        <div class="col-sm-12 col-md-6 col-lg-6" >
+            <div id="myCollapsibleExample"><a href="#demo" data-toggle="collapse">Click me to expand and click me again to collapse.</a></div>
+            <div id="demo" class="collapse">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehe.
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 hao" >
+            <p>&nbsp;</p>
+        </div>
+    </div>
+
+    <div class="row-fluid">
+        <div class="col-sm-12 col-md-6 col-lg-6 hao">
+            <br><br>
+            <a href="#" data-toggle="tooltip" title="Example tooltip">请悬停在我上面</a>
+            <br>
+            这是一个 <a href="#" class="tooltip-test" data-toggle="tooltip"
+                    data-placement="left" title="左侧的 Tooltip">
+            左侧的 Tooltip
+            </a>.<br>
+            这是一个 <a href="#" data-toggle="tooltip" data-placement="top"
+                    title="顶部的 Tooltip">
+            顶部的 Tooltip
+            </a>.
+            <br>
+            这是一个 <a href="#" data-toggle="tooltip" data-placement="bottom"
+                    title="底部的 Tooltip">
+            底部的 Tooltip
+            </a>.
+            <br>
+            这是一个 <a href="#" data-toggle="tooltip" data-placement="right"
+                    title="右侧的 Tooltip">
+            右侧的 Tooltip
+            </a>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 hao" >
+            <span class="btn btn-sm" data-rel="tooltip" title="" data-original-title="Default">Default</span>
+            <span class="btn btn-warning btn-sm tooltip-warning" data-rel="tooltip" data-placement="left" title="" data-original-title="Left Warning">Left</span>
+            <span class="btn btn-success btn-sm tooltip-success" data-rel="tooltip" data-placement="right" title="" data-original-title="Right Success">Right</span>
+        </div>
+    </div>
 </div>
