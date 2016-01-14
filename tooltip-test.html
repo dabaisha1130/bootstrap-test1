@@ -1,61 +1,159 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 <head>
-	<title>Bootstrap 实例 - 工具提示（Tooltip）插件</title>
-	<link rel="nofollow" href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-	<script src="/scripts/jquery.min.js"></script>
-	<script src="/bootstrap/js/bootstrap.min.js"></script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+	<title>Bootstrap 101 Template</title>
+
+	<!-- 新 Bootstrap 核心 CSS 文件 -->
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+	<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+	<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/login.css">
+	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+	<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+
+	<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+	<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+	<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+	<script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
 </head>
+
 <body>
+<div class="container-fluid" style="margin-top:20px;">
+	<div class="row">
+		<div class="col-xs-2 col-xs-offset-5 text-center">
+			<a type="button" class="btn btn-primary btn-block" href="modal_test.html" target="_blank" >模态框</a>
+		</div>
 
-<h4>工具提示（Tooltip）插件 - 锚</h4>
-这是一个 <a rel="nofollow" href="#" class="tooltip-test" data-toggle="tooltip"
-		title="默认的 Tooltip">
-	默认的 Tooltip
-</a>.
-这是一个 <a rel="nofollow" href="#" class="tooltip-test" data-toggle="tooltip"
-		data-placement="left" title="左侧的 Tooltip">
-	左侧的 Tooltip
-</a>.
-这是一个 <a rel="nofollow" href="#" data-toggle="tooltip" data-placement="top"
-		title="顶部的 Tooltip">
-	顶部的 Tooltip
-</a>.
-这是一个 <a rel="nofollow" href="#" data-toggle="tooltip" data-placement="bottom"
-		title="底部的 Tooltip">
-	底部的 Tooltip
-</a>.
-这是一个 <a rel="nofollow" href="#" data-toggle="tooltip" data-placement="right"
-		title="右侧的 Tooltip">
-	右侧的 Tooltip
-</a>
+	</div>
+	<br/>
 
-<br>
+	<div class="row">
+		<div class="col-xs-2 col-xs-offset-5 text-center">
+			<div class="dropdown">
+				<a id="dLabel" class="btn btn-primary" data-target="#" href="http://example.com" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+					Dropdown trigger
+					<span class="caret"></span>
+				</a>
 
-<h4>工具提示（Tooltip）插件 - 按钮</h4>
-<button type="button" class="btn btn-default" data-toggle="tooltip"
-		title="默认的 Tooltip">
-	默认的 Tooltip
-</button>
-<button type="button" class="btn btn-default" data-toggle="tooltip"
-		data-placement="left" title="左侧的 Tooltip">
-	左侧的 Tooltip
-</button>
-<button type="button" class="btn btn-default" data-toggle="tooltip"
-		data-placement="top" title="顶部的 Tooltip">
-	顶部的 Tooltip
-</button>
-<button type="button" class="btn btn-default" data-toggle="tooltip"
-		data-placement="bottom" title="底部的 Tooltip">
-	底部的 Tooltip
-</button>
-<button type="button" class="btn btn-default" data-toggle="tooltip"
-		data-placement="right" title="右侧的 Tooltip">
-	右侧的 Tooltip
-</button>
-<script>
-	$(function () { $("[data-toggle='tooltip']").tooltip(); });
+				<ul class="dropdown-menu" aria-labelledby="dLabel">
+					...
+				</ul>
+			</div>
+		</div>
+
+	</div>
+	<br/>
+
+
+	<div class="row">
+		<div class="col-xs-8 col-xs-offset-2">
+
+			<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+				<li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+				<li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+				<li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+			</ul>
+
+			<!-- Tab panes -->
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane fade in active" id="home">
+					this is home div<br>
+					用来做商品信息、性能、评价展示。不要用来做导航栏
+				</div>
+				<div role="tabpanel" class="tab-pane fade" id="profile">this is profile div</div>
+				<div role="tabpanel" class="tab-pane fade" id="messages">this is messages div</div>
+				<div role="tabpanel" class="tab-pane fade" id="settings">this is settings div</div>
+			</div>
+		</div>
+	</div>
+
+
+	<br/>
+	<!--工具提示-->
+	<div class="row">
+		<div class="col-xs-12 text-center">
+			<button type="button" class="btn btn-default" data-toggle="tooltip"  data-placement="left" title="Tooltip on left">Tooltip on left</button>
+
+			<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="top" title="Tooltip on top">Tooltip on top</button>
+
+			<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button>
+
+			<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="right" title="Tooltip on right">Tooltip on right</button>
+		</div>
+
+	</div>
+
+
+	<br/>
+	<!--弹出框，依赖工具提示，需要手动初始化-->
+	<div class="row">
+		<div class="col-xs-12 text-center">
+			<button id="mypopover" type="button" class="btn btn-default" data-container="body"  data-placement="right" >
+				Popover on 右侧
+			</button>
+
+			<div id="popover-head" class="hide">some title</div>
+			<div id="popover-content" class="hide">
+				<form>
+					there is form
+				</form>
+			</div>
+			<a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">
+				可消失的弹出框</a>
+		</div>
+
+
+
+
+
+	</div>
+
+
+</div>
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip()
+	})
+	$(function () {
+		$('[data-toggle="popover"]').popover()
+	})
+
+	$(document).ready(function () {
+		//自定义popover显示的内容
+		$('#mypopover').popover({
+			html : true,
+			title: function() {
+				return $("#popover-head").html();
+			},
+			content: function() {
+				return $("#popover-content").html();
+			}
+		});
+
+	});
+
 </script>
 
+
 </body>
+
 </html>

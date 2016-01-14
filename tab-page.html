@@ -2,10 +2,187 @@
 <script src="bootstrap-remote-tabs.js"></script>
 -->
 <link href="tab-page.css" rel="stylesheet">
+<link href="bower_components/gritter/css/jquery.gritter.css" rel="stylesheet">
+
 <script src="tab-test.js"></script>
+<script src="bower_components/gritter/js/jquery.gritter.min.js"></script>
 
 <script>
-    $(function () { $("[data-toggle='tooltip'], [data-rel='tooltip']").tooltip(); });
+    $(function () {
+        $("[data-toggle='tooltip'], [data-rel='tooltip']").tooltip();
+
+        $(".popover-hover[data-toggle='popover'], .popover-hover[data-rel='popover']").popover({animation:true, trigger:'hover',delay: { show: 200, hide: 100 }});
+        $("[data-toggle='popover'], [data-rel='popover']").popover({animation:true, trigger:'click',delay: { show: 200, hide: 100 }});
+
+        $('#add-sticky').click(function () {
+
+            var unique_id = $.gritter.add({
+                // (string | mandatory) the heading of the notification
+                title: 'This is a sticky notice!',
+                // (string | mandatory) the text inside the notification
+                text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eget tincidunt velit. Cum sociis natoque penatibus et <a href="#" style="color:#ccc">magnis dis parturient</a> montes, nascetur ridiculus mus.',
+                // (string | optional) the image to display on the left
+                //image: 'http://s3.amazonaws.com/twitter_production/profile_images/132499022/myface_bigger.jpg',
+                // (bool | optional) if you want it to fade out on its own or just sit there
+                sticky: true,
+                // (int | optional) the time you want it to be alive for before fading out
+                time: '',
+                // (string | optional) the class name you want to apply to that specific message
+                class_name: 'my-sticky-class'
+            });
+        });
+
+        $('#add-regular').click(function(){
+
+            $.gritter.add({
+                // (string | mandatory) the heading of the notification
+                title: 'This is a regular notice!',
+                // (string | mandatory) the text inside the notification
+                text: 'This will fade out after a certain amount of time. Vivamus eget tincidunt velit. Cum sociis natoque penatibus et <a href="#" style="color:#ccc">magnis dis parturient</a> montes, nascetur ridiculus mus.',
+                // (string | optional) the image to display on the left
+                image: 'http://a0.twimg.com/profile_images/59268975/jquery_avatar_bigger.png',
+                // (bool | optional) if you want it to fade out on its own or just sit there
+                sticky: false,
+                // (int | optional) the time you want it to be alive for before fading out
+                time: ''
+            });
+
+            return false;
+
+        });
+
+        $('#add-max').click(function(){
+
+            $.gritter.add({
+                // (string | mandatory) the heading of the notification
+                title: 'This is a notice with a max of 3 on screen at one time!',
+                // (string | mandatory) the text inside the notification
+                text: 'This will fade out after a certain amount of time. Vivamus eget tincidunt velit. Cum sociis natoque penatibus et <a href="#" style="color:#ccc">magnis dis parturient</a> montes, nascetur ridiculus mus.',
+                // (string | optional) the image to display on the left
+                image: 'http://a0.twimg.com/profile_images/59268975/jquery_avatar_bigger.png',
+                // (bool | optional) if you want it to fade out on its own or just sit there
+                sticky: false,
+                // (function) before the gritter notice is opened
+                before_open: function(){
+                    if($('.gritter-item-wrapper').length == 3)
+                    {
+                        // Returning false prevents a new gritter from opening
+                        return false;
+                    }
+                }
+            });
+
+            return false;
+
+        });
+
+        $('#add-without-image').click(function(){
+
+            $.gritter.add({
+                // (string | mandatory) the heading of the notification
+                title: 'This is a notice without an image!',
+                // (string | mandatory) the text inside the notification
+                text: 'This will fade out after a certain amount of time. Vivamus eget tincidunt velit. Cum sociis natoque penatibus et <a href="#" style="color:#ccc">magnis dis parturient</a> montes, nascetur ridiculus mus.'
+            });
+
+            return false;
+        });
+
+        $('#add-gritter-light').click(function(){
+
+            $.gritter.add({
+                // (string | mandatory) the heading of the notification
+                title: 'This is a light notification',
+                // (string | mandatory) the text inside the notification
+                text: 'Just add a "gritter-light" class_name to your $.gritter.add or globally to $.gritter.options.class_name',
+                class_name: 'gritter-light'
+            });
+
+            return false;
+        });
+
+        $('#add-with-callbacks').click(function(){
+
+            $.gritter.add({
+                // (string | mandatory) the heading of the notification
+                title: 'This is a notice with callbacks!',
+                // (string | mandatory) the text inside the notification
+                text: 'The callback is...',
+                // (function | optional) function called before it opens
+                before_open: function(){
+                    alert('I am called before it opens');
+                },
+                // (function | optional) function called after it opens
+                after_open: function(e){
+                    alert("I am called after it opens: \nI am passed the jQuery object for the created Gritter element...\n" + e);
+                },
+                // (function | optional) function called before it closes
+                before_close: function(e, manual_close){
+                    var manually = (manual_close) ? 'The "X" was clicked to close me!' : '';
+                    alert("I am called before it closes: I am passed the jQuery object for the Gritter element... \n" + manually);
+                },
+                // (function | optional) function called after it closes
+                after_close: function(e, manual_close){
+                    var manually = (manual_close) ? 'The "X" was clicked to close me!' : '';
+                    alert('I am called after it closes. ' + manually);
+                }
+            });
+
+            return false;
+        });
+
+        $('#add-sticky-with-callbacks').click(function(){
+
+            $.gritter.add({
+                // (string | mandatory) the heading of the notification
+                title: 'This is a sticky notice with callbacks!',
+                // (string | mandatory) the text inside the notification
+                text: 'Sticky sticky notice.. sticky sticky notice...',
+                // Stickeh!
+                sticky: true,
+                // (function | optional) function called before it opens
+                before_open: function(){
+                    alert('I am a sticky called before it opens');
+                },
+                // (function | optional) function called after it opens
+                after_open: function(e){
+                    alert("I am a sticky called after it opens: \nI am passed the jQuery object for the created Gritter element...\n" + e);
+                },
+                // (function | optional) function called before it closes
+                before_close: function(e){
+                    alert("I am a sticky called before it closes: I am passed the jQuery object for the Gritter element... \n" + e);
+                },
+                // (function | optional) function called after it closes
+                after_close: function(){
+                    alert('I am a sticky called after it closes');
+                }
+            });
+
+            return false;
+
+        });
+
+        $("#remove-all").click(function(){
+
+            $.gritter.removeAll();
+            return false;
+
+        });
+
+        $("#remove-all-with-callbacks").click(function(){
+
+            $.gritter.removeAll({
+                before_close: function(e){
+                    alert("I am called before all notifications are closed.  I am passed the jQuery object containing all  of Gritter notifications.\n" + e);
+                },
+                after_close: function(){
+                    alert('I am called after everything has been closed.');
+                }
+            });
+            return false;
+
+        });
+    });
 </script>
 
 <style>
@@ -823,6 +1000,177 @@
             <span class="btn btn-sm btn-warning tooltip-warning" data-rel="tooltip" title="" data-original-title="tooltip-danger" >tooptip-danger default</span>
             <span class="btn btn-sm btn-warning tooltip-warning" data-rel="tooltip" title="" data-original-title="tooltip-danger right" data-placement="right">tooltip-danger right</span>
             <span class="btn btn-sm btn-warning tooltip-warning" data-rel="tooltip" title="" data-original-title="tooltip-danger bottom" data-placement="bottom">tooltip-danger bottom</span>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="col-sm-12 col-md-6 col-lg-6 hao">
+            <p>
+                <span class="btn btn-sm btn-primary tooltip-warning" data-rel="popover" title="Default"
+                      data-content="Heads up! This alert needs your attention, but it's not super important.">Default</span>
+                <button type="button" class="btn btn-sm btn-primary tooltip-warning" data-toggle="popover" title="Default"
+                        data-content="左侧的 Popover 中的一些内容">左侧的 Popover</button>
+                <a href="#" class="tooltip-warning"  data-toggle="popover" title="Example popover" data-content="popover content">
+                    请悬停在我的上面
+                </a>
+                <button type="button" class="btn btn-default tooltip-success" title="Popover title"
+                        data-toggle="popover" data-placement="left"
+                        data-content="左侧的 Popover 中的一些内容">
+                    左侧的 Popover
+                </button>
+                <button type="button" class="btn btn-primary tooltip-success" title="Popover title"
+                        data-rel="popover" data-placement="top"
+                        data-content="顶部的 Popover 中的一些内容">
+                    顶部的 Popover
+                </button>
+                <button type="button" class="btn btn-success tooltip-success" title="Popover title"
+                       data-toggle="popover" data-placement="bottom"
+                        data-content="底部的 Popover 中的一些内容">
+                    底部的 Popover
+                </button>
+                <button type="button" class="btn btn-warning tooltip-info" title="Popover title"
+                        data-toggle="popover" data-placement="right"
+                        data-content="右侧的 Popover 中的一些内容">
+                    右侧的 Popover
+                </button>
+
+                <span class="btn btn-danger btn-sm tooltip-error" data-rel="popover" data-placement="top" data-original-title=" Top Danger" data-content="Oh snap! Change a few things up and try submitting again.">Top</span>
+
+
+            </p>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 hao">
+            <p>
+                <span class="btn btn-sm btn-primary tooltip-warning popover-hover" data-rel="popover" data-placement="left" title="Default"
+                      data-content="Heads up! This alert needs your attention, but it's not super important.">左侧的popover</span>
+                <button type="button" class="btn btn-sm btn-primary tooltip-warning popover-hover" data-toggle="popover" data-placement="right" title="Default"
+                        data-content="左侧的 Popover 中的一些内容">右侧的 Popover</button>
+                <a href="#" class="tooltip-warning popover-hover"  data-toggle="popover" data-placement="top" title="Example popover" data-content="popover content">
+                    请悬停在我的上面
+                </a>
+                <button type="button" class="btn btn-default tooltip-success popover-hover" title="Popover title"
+                        data-toggle="popover" data-placement="left"
+                        data-content="左侧的 Popover 中的一些内容">
+                    左侧的 Popover
+                </button>
+                <button type="button" class="btn btn-primary tooltip-success popover-hover" title="Popover title"
+                        data-rel="popover" data-placement="top"
+                        data-content="顶部的 Popover 中的一些内容">
+                    顶部的 Popover
+                </button>
+                <button type="button" class="btn btn-success tooltip-success popover-hover" title="Popover title"
+                        data-toggle="popover" data-placement="bottom"
+                        data-content="底部的 Popover 中的一些内容">
+                    底部的 Popover
+                </button>
+                <button type="button" class="btn btn-warning tooltip-info popover-hover" title="Popover title"
+                        data-toggle="popover" data-placement="right"
+                        data-content="右侧的 Popover 中的一些内容">
+                    右侧的 Popover
+                </button>
+
+                <span class="btn btn-danger btn-sm tooltip-error popover-hover" data-rel="popover" data-placement="top" data-original-title=" Top Danger" data-content="Oh snap! Change a few things up and try submitting again.">Top</span>
+                <span class="btn btn-success btn-sm tooltip-success" data-rel="popover" data-placement="right" data-html="true" title="<i class='green icon-home bigger-110'></i> Right Success" data-content="Well done! You successfully read this important alert message.">Right</span>
+
+            </p>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="col-sm-12 col-md-6 col-lg-6 hao">
+            <h3>警告框（Alert）插件 alert() 方法</h3>
+
+            <div id="myAlert1" class="alert alert-success">
+                <a href="#" class="close" data-dismiss="alert">&times;</a>
+                <strong>成功！</strong>结果是成功的。
+            </div>
+            <div id="myAlert2" class="alert alert-warning">
+                <a href="#" class="close" data-dismiss="alert">&times;</a>
+                <strong>警告！</strong>您的网络连接有问题。
+            </div>
+
+            <script type="text/javascript">
+                $(function () {
+                    $(".close").click(function () {
+                        $("#myAlert1").alert();
+                    });
+                });
+            </script>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 hao">
+            <h3>警告框（Alert）插件 alert('close') 方法</h3>
+
+            <div id="myAlert3" class="alert alert-success">
+                <a href="#" class="close" data-dismiss="alert">&times;</a>
+                <strong>成功！</strong>结果是成功的。
+            </div>
+            <div id="myAlert4" class="alert alert-warning">
+                <a href="#" class="close" data-dismiss="alert">&times;</a>
+                <strong>警告！</strong>您的网络连接有问题。
+            </div>
+
+            <script type="text/javascript">
+                $(function () {
+                    $(".close").click(function () {
+                        $("#myAlert").alert('close');
+                    });
+                });
+            </script>
+            <div class="alert alert-block alert-success">
+                <button type="button" class="close" data-dismiss="alert">
+                    <i class="icon-remove"></i>
+                </button>
+
+                <p>
+                    <strong>
+                        <i class="icon-ok"></i>
+                        Well done!
+                    </strong>
+                    You successfully read this important alert message.
+                </p>
+
+                <p>
+                    <button class="btn btn-sm btn-success">Do This</button>
+                    <button class="btn btn-sm">Or This One</button>
+                </p>
+            </div>
+            <a tabindex="0" class="btn btn-lg btn-danger" role="button" data-toggle="popover" data-trigger="focus" title="Dismissible popover" data-content="And here's some amazing content. It's very engaging. Right?">
+                可消失的弹出框</a>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="col-sm-12 col-md-6 col-lg-6 hao">
+            <ul>
+                <li>
+
+                    <a href="#" id="add-regular">Add regular notification</a>: Fades out after a certain amount of time, can be set for each notification.
+                </li>
+                <li>
+                    <a href="#" id="add-sticky">Add sticky notification</a>: Doesn't run on a fade timer.  Just sits there until the user manually removes it by clicking on the (X).
+                </li>
+                <li>
+                    <a href="#" id="add-without-image">Add notification without image</a>
+                </li>
+                <li>
+                    <a href="#" id="add-gritter-light">Add a white notification</a>: has a 'gritter-light' class_name applied to it.
+                </li>
+                <li>
+                    <a href="#" id="add-with-callbacks">Add notification (with callbacks)</a>
+                </li>
+                <li>
+                    <a href="#" id="add-sticky-with-callbacks">Add a sticky notification (with callbacks)</a>
+                </li>
+                <li>
+                    <a href="#" id="add-max">Add notification with max of 3</a>: If there are 3 messages already on screen, it won't show another one.
+                </li>
+                <li>
+                    <a href="#" id="remove-all">Remove all notifications</a>
+                </li>
+                <li>
+                    <a href="#" id="remove-all-with-callbacks">Remove all notifications (with callbacks)</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 hao">
+
         </div>
     </div>
 </div>

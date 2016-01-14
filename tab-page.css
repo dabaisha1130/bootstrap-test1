@@ -447,3 +447,99 @@
     border-bottom-color: #4b89aa
 }
 /* tooltip */
+
+/* popover */
+
+.popover {
+    border-radius: 0;
+    padding: 0;
+    border-color: #ccc;
+    border-width: 1px;
+    -webkit-box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.2);
+    color: #4d6883
+}
+
+.popover-title {
+    border-radius: 0;
+    background-color: #eff3f8;
+    color: #555;
+    border-bottom: 1px solid #dfe3e8;
+    text-shadow: 1px 1px 1px rgba(220, 220, 220, 0.2)
+}
+
+.popover.bottom .arrow:after {
+    top: 1px;
+    margin-left: -10px;
+    border-bottom-color: #eff3f8;
+    border-top-width: 0
+}
+
+.tooltip-error + .popover {
+    color: #555;
+    border: 1px solid #f7f0ef
+}
+
+.tooltip-error + .popover .popover-title {
+    background-color: #f7f0ef;
+    border-bottom-color: #e8e0df;
+    color: #b75445;
+    text-shadow: none
+}
+
+.tooltip-warning + .popover {
+    color: #555;
+    border: 1px solid #f4eee3
+}
+
+.tooltip-warning + .popover .popover-title {
+    background-color: #f4eee3;
+    border-bottom-color: #e4dcd3;
+    color: #d67e31;
+    text-shadow: none
+}
+
+.tooltip-success + .popover {
+    color: #555;
+    border: 1px solid #e8f2e3
+}
+
+.tooltip-success + .popover .popover-title {
+    background-color: #e8f2e3;
+    border-bottom-color: #d8e2d3;
+    color: #629b58;
+    text-shadow: none
+}
+
+.tooltip-info + .popover {
+    color: #555;
+    border: 1px solid #e5edf8
+}
+
+.tooltip-info + .popover .popover-title {
+    background-color: #e5edf8;
+    border-bottom-color: #d5dde8;
+    color: #3f79b6;
+    text-shadow: none
+}
+
+.popover-notitle + .popover .popover-title {
+    display: none
+}
+
+.popover-notitle + .popover.top .arrow:after {
+    border-top-color: #FFF
+}
+
+.popover-notitle + .popover.bottom .arrow:after {
+    border-bottom-color: #FFF
+}
+
+.popover-notitle + .popover.left .arrow:after {
+    border-left-color: #FFF
+}
+
+.popover-notitle + .popover.right .arrow:after {
+    border-left-color: #FFF
+}
+/* popover */
