@@ -12,7 +12,7 @@
 */
 
 .same-height-col.row, .same-height-col.row-fluid{
-    display: table;
+    display: table-row;
 }
 
 .same-height-col.row [class*="col-"], .same-height-col.row-fluid [class*="col-"]{
