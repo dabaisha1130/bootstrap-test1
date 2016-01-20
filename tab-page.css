@@ -12,12 +12,13 @@
 */
 
 .same-height-col.row, .same-height-col.row-fluid{
-    overflow: hidden;
+    display: table;
 }
 
 .same-height-col.row [class*="col-"], .same-height-col.row-fluid [class*="col-"]{
-    margin-bottom: -99999px;
-    padding-bottom: 99999px;
+    float: none;
+    display: table-cell;
+    vertical-align: top;
 }
 
 /* bootstrap same height col */
@@ -292,15 +293,20 @@
 
 
 /*  accordion  */
-
+/*
 .panel-heading {
     padding: 10px 15px;
     border-bottom: 1px solid transparent;
     border-top-right-radius: 3px;
     border-top-left-radius: 3px;
 }
+*/
 
 .accordion-style1.panel-group .panel-heading {
+    padding: 10px 15px;
+    border-bottom: 1px solid transparent;
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
     color: #4c8fbd;
     background-color: #eef4f9;
     position: relative;
