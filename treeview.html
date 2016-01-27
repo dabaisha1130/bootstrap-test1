@@ -1,57 +1,85 @@
+<!-- ace styles -->
 
-<style>
-    .row-eq-height, .row-eq-height > div[class*='col-'] {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: flex;
-        flex:1 0 auto;
-    }
-    .hao{
-        min-height:150px;
-        border:1px solid #0b6cbc;
-        clear:right;
-    }
-    .row-eq-height-xs {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display:         flex;
-        flex-direction: row;
-    }
+<link rel="stylesheet" href="ace/assets/css/ace-tree.css"/>
+<link rel="stylesheet" href="ace/assets/css/ace-widget.css"/>
 
-</style>
-<script src="data/fuelux.tree-sampledata.js"></script>
-<script src="fuelux.tree.min.js"></script>
+<div class="page-content">
+    <div class="page-header">
+        <h1>
+            Treeview
+            <small>
+                <i class="icon-double-angle-right"></i>
+                with selectable items(single &amp; multiple) and custom icons
+            </small>
+        </h1>
+    </div><!-- /.page-header -->
+
+    <div class="row">
+        <div class="col-xs-12">
+            <!-- PAGE CONTENT BEGINS -->
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="widget-box">
+                        <div class="widget-header header-color-blue2">
+                            <h4 class="lighter smaller">Choose Categories</h4>
+                        </div>
+
+                        <div class="widget-body">
+                            <div class="widget-main padding-8">
+                                <div id="tree1" class="tree"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="widget-box">
+                        <div class="widget-header header-color-green2">
+                            <h4 class="lighter smaller">Browse Files</h4>
+                        </div>
+
+                        <div class="widget-body">
+                            <div class="widget-main padding-8">
+                                <div id="tree2" class="tree"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- PAGE CONTENT ENDS -->
+        </div><!-- /.col -->
+    </div><!-- /.row -->
+</div><!-- /.page-content -->
+
+<!-- page specific plugin scripts -->
+
+<script src="ace/assets/js/fuelux/data/fuelux.tree-sampledata.js"></script>
+<script src="ace/assets/js/fuelux/fuelux.tree.min.js"></script>
+<script src="ace/assets/js/ace-tree.js"></script>
+<!-- inline scripts related to this page -->
+
 <script type="text/javascript">
-
-    var treeDataSource = new DataSource({
-        data: [
-            { name: 'Test Folder 1', type: 'folder', additionalParameters: { id: 'F1' },
-                data: [
-                    { name: 'Test Sub Folder 1', type: 'folder', additionalParameters: { id: 'FF1' } },
-                    { name: 'Test Sub Folder 2', type: 'folder', additionalParameters: { id: 'FF2' } },
-                    { name: 'Test Item 2 in Folder 1', type: 'item', additionalParameters: { id: 'FI2' } }
-                ]
-            },
-            { name: 'Test Folder 2', type: 'folder', additionalParameters: { id: 'F2' } },
-            { name: 'Test Item 1', type: 'item', additionalParameters: { id: 'I1' } },
-            { name: 'Test Item 2', type: 'item', additionalParameters: { id: 'I2' } }
-        ],
-        delay: 40});
-
-    jQuery(function($){
-
-        $('#tree1').tree({
-            dataSource: treeDataSource ,
-            multiSelect:true,
-            loadingHTML:'<div class="tree-loading"><i class="icon-refresh icon-spin blue"></i></div>',
-            'open-icon' : 'icon-minus',
-            'close-icon' : 'icon-plus',
-            'selectable' : true,
-            'selected-icon' : 'icon-ok',
-            'unselected-icon' : 'icon-remove'
+    jQuery(function ($) {
+        $('#tree1').ace_tree({
+            dataSource: treeDataSource,
+            multiSelect: true,
+            loadingHTML: '<div class="tree-loading"><i class="icon-refresh icon-spin blue"></i></div>',
+            'open-icon': 'icon-minus',
+            'close-icon': 'icon-plus',
+            'selectable': true,
+            'selected-icon': 'icon-ok',
+            'unselected-icon': 'icon-remove'
         });
 
+        $('#tree2').ace_tree({
+            dataSource: treeDataSource2,
+            loadingHTML: '<div class="tree-loading"><i class="icon-refresh icon-spin blue"></i></div>',
+            'open-icon': 'icon-folder-open',
+            'close-icon': 'icon-folder-close',
+            'selectable': false,
+            'selected-icon': null,
+            'unselected-icon': null
+        });
 
 
         /**
@@ -69,37 +97,4 @@
          */
     });
 </script>
-
-<div class="container-fluid">
-     <div class="row-fluid row-eq-height-xs">
-        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="background-color:#f00;">
-            <div class="widget-box">
-                <div class="widget-header header-color-blue2">
-                    <h4 class="lighter smaller">Choose Categories</h4>
-                </div>
-
-                <div class="widget-body">
-                    <div class="widget-main padding-8">
-                        <div id="tree1" class="tree"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="background-color:#0f0;">
-            <div class="widget-box">
-                <div class="widget-header header-color-green2">
-                    <h4 class="lighter smaller">Browse Files</h4>
-                </div>
-
-                <div class="widget-body">
-                    <div class="widget-main padding-8">
-                        <div id="tree2" class="tree"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-</div>
 
